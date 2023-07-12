@@ -1,1 +1,0 @@
-$(".email").click(function(){$("html,body").animate({scrollTop:$("#sectionb").offset().top},"slow")});
