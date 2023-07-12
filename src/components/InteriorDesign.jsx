@@ -19,7 +19,7 @@ function InteriorDesign() {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
     gap: '10px',
-    height: '100%'
+    height: '60vh'
   };
   return (
     <>
@@ -141,7 +141,7 @@ function InteriorDesign() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12" style={{ margin: 'auto' }}>
-            <div className="load" style={{ display: 'none', height: '0px' }} ></div>
+            <div className="load"  ></div>
             <div className id="tainer" align="center" style={{}} >
 
               <div className='grid-container' style={gridStyle} >
@@ -186,7 +186,7 @@ function InteriorDesign() {
               </div>
 
               <div className="modal fade bd-example-modal-lg " role="dialog" aria-labelledby="myLargeModalLabel"
-                tabindex="-1" style={{ display: 'block' }}>
+                tabindex="-1" style={{ display: 'none' }}>
                 <div className="modal-dialog modal-lg">
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                     <img className="specialcross" src="/img/cross.png" />

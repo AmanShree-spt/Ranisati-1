@@ -49,7 +49,7 @@ function Navbar() {
             <a href="/howitworks"><span className="nav-label"> How it Works</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
 
-            <a href="javascript:void(0);">
+            <a href="interior-design">
               <span className="nav-label"> Our Designs</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-18px' }}>
             </span>
