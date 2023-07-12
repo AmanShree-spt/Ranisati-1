@@ -1,0 +1,57 @@
+.ianimator {
+    opacity: 0;
+        animation-delay: 1.2s;
+}
+
+.ianimator.animated {
+    opacity: 1;
+    
+}
+
+.animatortwo {
+    opacity: 0;
+
+}
+
+.animatortwo.animated {
+    opacity: 1;
+    animation-delay: 2s;
+    
+}
+
+.animatorthree {
+    opacity: 0;
+   animation-delay: 1.2s;
+}
+
+.animatorthree.animated {
+    opacity: 1;
+
+}
+
+.animatorfour {
+    opacity: 0;
+   animation-delay: 2s;
+        
+}
+
+.animatorfour.animated {
+    opacity: 1
+}
+
+.animatorfive {
+    opacity: 0;
+        animation-delay:.9s;
+}
+
+.animatorfive.animated {
+    opacity: 1
+}
+
+.animatorsix {
+    opacity: 0
+}
+
+.animatorsix.animated {
+    opacity: 1
+}

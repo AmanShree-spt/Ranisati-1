@@ -1,0 +1,349 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    background-color:rgba(0, 0, 0,0.85);
+    width: 100%;
+  
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    padding-top: 20px;
+  
+  }
+  
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    margin-top:  -30px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*image like menu*/
+  
+  .image_post ul {
+      list-style-type: none;
+  }
+  .image_post ul li img{
+      width:auto;
+      height:400px;
+      
+  }
+  .image_post ul li{
+      list-style-type: none;
+      position: relative;
+      display: none;
+  }
+  .image_post ul li.activepostimg{
+      list-style-type: none;
+      position: relative;
+      display: block;
+  }
+  /*image like menu*/
+  .buttons_prev,
+  .buttons_prev:hover
+  {
+      color: white;
+      text-decoration: none;
+  }
+  .buttons_next,
+  .buttons_next:hover
+  {
+      color: white;
+      text-decoration: none;
+  }
+  .buttons_prev i{
+       left: 15px;
+       top:20vh;
+       position: absolute;
+  
+  }
+  .buttons_next i{
+       right: 15px;
+       top:20vh;
+       position: absolute;
+  }
+  .activepostimg h2{
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+      padding-left: 50px;
+      
+  }
+  .activepostimg h2:nth-of-type(1){
+      padding-top: 5px;
+  }
+  .activepostimg p{
+      color: white;
+      font-weight: 200;
+      padding-left: 50px;
+  }
+  
+  .slide_image_counter{
+      padding-top:10px;
+      color: white;
+  }
+  
+  .slide_image_counter a{
+      background-color:rgba(115, 115, 115, 0.5);
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 12px;
+      font-size: 12px;
+      text-align: justify;
+  }
+  
+   .modal-lg {
+      max-width: 100%;
+    }
+  .morecontent span {
+      display: none;
+  }
+  .morelink {
+      display: block;
+  }
+  /***********************************************************************************************
+  ______________________________________________________________________________________________
+                                    Slider Image Mobile Query   
+  ______________________________________________________________________________________________
+  ************************************************************************************************/
+    @media only screen 
+      and (min-width : 300px) 
+      and (max-width : 500px)  {
+          /* Modal Content */
+          .modal-content {
+              margin: auto;
+              padding: 0;
+              width: 100%;
+              padding-top: 150px;
+              height: auto;
+          }
+              /* The Close Button */
+          .close {
+              color: white;
+              position: absolute;
+              margin-top:  0px;
+              right: 0px;
+              font-size: 20px;
+              font-weight: bold;
+              z-index: 999;
+           }
+          .close:hover,
+          .close:focus {
+              color: #fff;
+              text-decoration: none;
+              cursor: pointer;
+          }
+              /*image like menu*/
+          .image_post{
+              z-index: 555;
+          }
+          .image_post ul {
+              list-style-type: none;
+          }
+          .image_post ul li img{
+              width:auto;
+              height: auto;
+              max-height:320px;
+              max-width: 90%;
+              z-index: 555;
+          }
+          .image_post ul li{
+              list-style-type: none;
+              position: relative;
+              display: none;
+              }
+          .image_post ul li.activepostimg{
+              list-style-type: none;
+              position: relative;
+              display: block;
+          }
+              /*image like menu*/
+          .buttons_prev,
+          .buttons_prev:hover
+              {
+              color: white;
+              text-decoration: none;
+              display: none;
+          }
+          .buttons_next,
+          .buttons_next:hover
+              {
+              color: white;
+              text-decoration: none;
+              display: none;
+          }
+          .buttons_prev i{
+              left: 1px;
+              z-index: 999;
+              opacity: 0;
+              padding: 2px;
+              background: rgba(115, 115, 115, 0.8);
+          }
+          .buttons_next i{
+              right: 1px;
+              z-index: 999;
+              opacity: 0;
+              padding: 2px;
+              background: rgba(115, 115, 115, 0.8);
+          }
+          .buttons_next i:hover,
+          .buttons_prev i:hover{
+             opacity: 1;
+          }
+          .slide_image_counter{
+              padding-top:10px;
+              color: white;
+          }
+          .activepostimg h2{
+              color: white;
+              font-size: 17px;
+              font-weight: 300;
+              padding-left: 0px;
+          }
+          .activepostimg h2:nth-of-type(1){
+              padding-top: 5px;
+          }
+          .activepostimg p{
+              color: white;
+              font-weight: 200;
+              padding-left: 0px;
+          }
+          .slide_image_counter a{
+              background-color:rgba(115, 115, 115, 0.5);
+              color: white;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-radius: 12px;
+              font-size: 11px;
+              text-align: justify;
+          }
+          .modal-lg {
+              max-width: 98%;
+          }  
+              
+    }
+  /***********************************************************************************************
+  ______________________________________________________________________________________________
+                                    Slider Image Mobile Query   
+  ______________________________________________________________________________________________
+  ************************************************************************************************/
+  @media only screen 
+      and (min-width : 510px) 
+      and (max-width : 768px)  {
+          .modal-content {
+              margin: auto;
+              padding: 0;
+              width: 100%;
+              padding-top: 20px;
+              background-color:rgba(0, 0, 0,0.85);
+          }
+              /* The Close Button */
+          .close {
+              color: white;
+              position: absolute;
+              margin-top:  -30px;
+              right: 5px;
+              font-size: 20px;
+              font-weight: bold;
+              z-index: 999;
+           }
+          .close:hover,
+          .close:focus {
+              color: #fff;
+              text-decoration: none;
+              cursor: pointer;
+          }
+              /*image like menu*/
+          .image_post{
+              z-index: 555;
+          }
+          .image_post ul {
+              list-style-type: none;
+          }
+          .image_post ul li img{
+              width:auto;
+              max-height:280px;
+              z-index: 555;
+          }
+          .image_post ul li{
+              list-style-type: none;
+              position: relative;
+              display: none;
+              }
+          .image_post ul li.activepostimg{
+              list-style-type: none;
+              position: relative;
+              display: block;
+          }
+              /*image like menu*/
+          .buttons_prev i{
+              top:30vh;
+              left: 0px;
+              z-index: 999;
+           
+              padding: 2px;
+              background: rgba(115, 115, 115, 0.8);
+          }
+          .buttons_next i{
+              top:30vh;
+              right: 0px;
+              z-index: 999;
+           
+              padding: 2px;
+              background: rgba(115, 115, 115, 0.8);
+          }
+  
+          .activepostimg h2{
+              color: white;
+              font-size: 17px;
+              font-weight: 300;
+              padding-left: 0px;
+          }
+          .activepostimg h2:nth-of-type(1){
+              padding-top: 5px;
+          }
+          .activepostimg p{
+              color: white;
+              font-weight: 200;
+              padding-left: 0px;
+          }
+          .slide_image_counter{
+              padding-top:10px;
+          }
+          .slide_image_counter a{
+              font-size: 14px;
+          }
+          .modal-lg {
+              max-width: 100%;
+          }  
+          
+      
+  }
+  

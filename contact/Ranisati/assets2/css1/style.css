@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+html{
+    overflow: auto;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+h1,h2,h3,p,span,a{
+    font-family: Montserrat;
+}
+.black_logo{
+    height: 50px;
+    width: auto;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/*********************************************************************
+----------------------[sectionaccess]--------------------------------
+***********************************************************************/
+.newLogoStyle{
+    height:70px;
+    padding-left:10px;
+    padding-top:10px;
+    position:fixed;
+    top:0px;
+    z-index:999;
+    
+}
+.newLogoMobile{
+    display: none;
+    opacity: 0;
+}
+#sectionaccess{
+  height: 100vh;
+  background-image: url(../img1/backimage.jpg);
+  background-size: 100% 100%;
+}
+.starttext{
+    color: #fff;
+    padding-top: 250px;
+    padding-bottom: 80px;
+    font-weight: 300;
+}
+.starttext h1{
+    font-weight: 200;
+}
+.startsection{
+    /*margin-right: -35px;*/
+    color: aliceblue;
+    
+}
+.startsection a{
+    border: 1px solid;
+    color: #fff;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 45px;
+}
+.startsection a:hover{
+    text-decoration: none;
+    outline: none;;
+}
+.firstSecNext{
+    outline:none;
+}
+/*********************************************************************
+--------------------[1st section form]-----------------------------------
+**********************************************************************/
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+#mainframe{
+    background-image: url(../img1/backimage.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+}
+/*section1*/
+#section1{
+    height: 100vh;
+}
+#section1 h2 ,
+#section2 h2 ,
+#section3 h2 ,
+#section4 h2
+{
+    font-weight: 200;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    font-size: 40px;
+}
+.mybar{
+    width: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+    
+  font-size: 20px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: rgba(1.6%,1.6%,1.6%,0.4);
+  background-image: none;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+.form-control:focus{
+    background-color:rgba(204,204,204,0.2);
+    color: #fff;
+}
+.input-group{
+    position: relative;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.input-group-addon{
+    background-color: rgba(1.6%,1.6%,1.6%,0.4);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 150px;
+    margin-right: 10px;
+}
+.myradio{
+    background-color: rgba(1.6%,1.6%,1.6%,0.4);
+    color: #fff;
+    height:110px;
+    width: 100%;
+    border-radius: 9px;
+    padding: 30px;
+    line-height:40px;
+    font-size: 28px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
+}
+input[type='radio']{
+    display: none;
+}
+.check-with-label{
+    display:block;
+}
+.progress{
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      text-align: center;
+      background-color: rgba(242,237,237,0.8);
+      border-radius: 0;
+}
+.progress-bar {
+      transition: 0.8s linear;
+      transition-property: width;
+      height: .25rem;
+      line-height: 2rem;
+      color: #FFF;
+      background-color:#00aeef 
+}
+.check-with-label:checked+.myradio {
+     background-color: rgba(204,204,204,0.2);
+     color: white;
+}
+
+  .notcomp{
+    display: none;
+   }
+  .number{
+         font-weight: 600;
+         margin-top:0px;
+         background-color: transparent;
+         padding-top: 2px;
+         padding-bottom: 3px;
+     }
+.number a{
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 20px;
+      padding-left: 20px;
+      
+}
+.MyButtons{
+    color: #616161;
+    background-color: transparent;
+    font-size: 12px;
+    outline: none;
+}
+.MyButtons:hover{
+    color: #616161;
+    background-color: transparent;
+    font-size: 12px;
+    text-decoration: none;
+    outline: none;
+}
+.skipable{
+    display: block;
+    opacity: 0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+    color: #616161;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.skipable:hover{
+    color: #64d5ff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.skipable a{
+     display: block;
+    opacity: 0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+    color: #616161;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.skipable a:hover{
+    color: #64d5ff;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.nextme,
+.clickme{
+    cursor:pointer;
+}
+/*section2*/
+#section2{
+    height: 100vh;
+}
+/*section3*/
+#section3{
+    height: 100vh;
+}
+/*section4*/
+#section4{
+    height: 100vh;
+}
+/*section5*/
+#section5{
+    height: 100vh;
+    background: #ebedef; 
+    background: -webkit-linear-gradient(#ebedef,  #fff);
+    background: -o-linear-gradient(#ebedef,  #fff);
+    background: -moz-linear-gradient(#ebedef, #fff); 
+    background: linear-gradient(#ebedef, #fff); 
+  
+}
+#section5 h2{
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+/*image like menu*/
+.menu_card ul {
+    list-style-type: none;
+    
+}
+.menu_card ul li img{
+    width:auto;
+    max-width: 750px;
+    height:500px;
+    margin-left: -5px;
+    box-shadow: 0px 6px 10px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 6px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 10px -3px rgba(0,0,0,0.75);
+    -o-box-shadow: 0px 6px 10px -3px rgba(0,0,0,0.75);
+}
+.menu_card ul li{
+    list-style-type: none;
+    position: relative;
+    display: none;
+    overflow-x: hidden
+}
+.menu_card ul li.activeimg{
+    list-style-type: none;
+    position: relative;
+    display: block;
+    opacity: 0;
+}
+/*image like menu*/
+.halftop{
+    margin-top: 5vh;
+}
+.halftopdislike{
+    margin-top: 42vh;
+}
+.halftopdislike p,
+.halftopdislike a
+{
+    color: red;
+    font-weight: 400;
+    text-decoration: none;
+}
+.halftoplike{
+    margin-top: 42vh;
+}
+.halftoplike p,
+.halftoplike a
+{
+    color: green;
+    font-weight: 400;
+    text-decoration: none;
+}
+.compview{
+    display: none;
+}
+.shadowcard{
+     -webkit-box-shadow: 0px 9px 22px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 9px 22px 1px rgba(0,0,0,0.75);
+             box-shadow: 0px 9px 22px 1px rgba(0,0,0,0.75);    
+}
+.hidechktext{
+     opacity: 0;
+     display: none;
+}
+
+/*section6*/
+#section6{
+    height: 100vh;
+    padding-bottom: 150px;
+}
+#section6 h2 {
+    font-weight: 200;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 40px;
+}
+.customkey{
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgba(1.6%,1.6%,1.6%,0.4);
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    border: 0px;
+}
+
+/*mobile css start*/
+@media only screen 
+and (min-width : 300px) 
+and (max-width : 500px)  {
+        .newLogoStyle{
+            display: none;
+            opacity: 0;
+        }
+        .newLogoMobile{            
+            height: 55px;
+            padding-top: 10px;
+            position: fixed;
+            top: 0px;
+            z-index: 999;
+            display: block;
+            opacity: 1;
+            margin-left: 92px;
+        }
+       #mainframe{
+           content: "";
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           z-index: -10;
+           background-image: none;
+           background: #1a283a;
+           background: -webkit-linear-gradient(#1a283a, #616161);
+           background: -o-linear-gradient(#1a283af, #616161);
+           background: -moz-linear-gradient(#1a283a, #616161);
+           background: linear-gradient(#1a283a, #616161); 
+
+        }
+        #section1 ,#section2 ,#section3 ,#section4 {
+             height: 100vh !important; 
+             margin-bottom: 40px!important;
+            
+        }
+        #section1 h2{
+             font-size: 19px !important; 
+             padding-top: 170px !important;
+             padding-bottom: 50px !important;
+        }
+        #section2 h2{
+             font-size: 19px !important; 
+             padding-top: 100px !important;
+             padding-bottom: 50px !important;
+        }
+        #section4 h2{
+             font-size: 19px !important; 
+             padding-top: 80px !important;
+             padding-bottom: 40px !important;
+        }
+        #section3 h2{
+             font-size: 19px !important; 
+             padding-top: 80px !important;
+             padding-bottom: 40px !important;
+        }
+        #section5{
+              height: 100vh !important;
+              padding-bottom: 20px!important;
+              padding-top: 20px !important;
+        }
+        #section5 h2{
+              font-size: 19px;
+              padding-top: 50px!important;
+              padding-bottom: 20px!important;
+        }
+   
+    
+    
+    /*********************************************************************
+----------------------[sectionaccess]--------------------------------
+***********************************************************************/
+        #sectionaccess{
+           height: 100vh;
+           background-image:none;
+           background: #1a283a;
+           background: -webkit-linear-gradient(#1a283a, #616161);
+           background: -o-linear-gradient(#1a283af, #616161);
+           background: -moz-linear-gradient(#1a283a, #616161);
+           background: linear-gradient(#1a283a, #616161);
+           background-size: 100% 100%;
+        }
+        .starttext{
+            color: #fff;
+            padding-top: 250px;
+            padding-bottom: 80px;
+            font-weight: 300;
+        }
+        .starttext h1{
+            font-weight: 200;
+            font-size: 29px;
+        }
+        .startsection{
+            margin-right: 0px;
+            margin-left: 0px;
+            color: #fff;
+            
+
+        }
+        .startsection a{
+            border: 1px solid;
+            color: #fff;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 50px;
+            margin-left: 10px;
+        }
+        .startsection a:hover{
+            text-decoration: none;
+        }
+    
+    
+        #section6{
+              height: auto !important; 
+              padding-top: 40px!important;
+              padding-bottom: 60px!important;
+        }
+        #section6 h2{
+             font-size: 19px !important;   
+             padding-bottom: 50px!important;
+             padding-top: 100px!important;
+        }
+       .myradio{
+            background-color: rgba(1.6%,1.6%,1.6%,0.4);
+            height:70px !important;
+            width: 100%;
+            color: white;
+            line-height:14px !important;
+            font-weight: 50 !important;
+            margin-top: 5px;
+        }
+        .myradio p{
+            color: #fff;
+            font-size: 15px!important;
+            font-weight:200;
+            text-align: center !important;
+        }
+        .check-with-label:checked + .myradio p{
+            color: white;
+       }
+        .notmobile{
+            display: none;
+        }
+        .mobileview{
+            display: none;
+        }
+        .compview{
+            display: block;
+        }
+        .notcomp{
+            display: block;
+         }
+       
+         .menu_card ul li img{
+             width:auto !important;
+             
+             height:250px !important;
+         }
+      .number{
+             font-weight: 600;
+             color:black;
+             margin-top:0px;
+             background-color:transparent;
+            
+         }
+      .tabview{
+             display: none !important;
+         }
+      .form-control{
+            color: #fff;
+            font-weight: 200;
+        }
+      .form-control:focus{
+             background-color:rgba(204,204,204,0.2);
+             color: #FFF !important;
+           }
+      .customkey{
+            height: 40px;
+            width: 100%;
+            border-radius: 50px;
+            background-color: rgba(1.6%,1.6%,1.6%,0.4);
+            font-size: 20px;
+            color: #fff !important;
+            border: 0px;
+            } 
+      .input-group{
+            position: relative;
+            display: -webkit-flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            height: 40px;
+           }
+    .input-group-addon{
+            background-color:rgba(0,0,0,0.4);
+            color: #fff !important;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100px;
+            margin-right: 10px;
+             }
+    .skipable{
+            display: block;
+            opacity: 0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2px;
+            color: #616161;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+           }
+    .skipable:hover{
+            color: #64d5ff;
+            font-size: 12px;
+            font-weight: 600;
+           }
+    .skipable a{
+            display: block;
+            opacity: 0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2px;
+            color: #616161;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+           }
+    .skipable a:hover{
+        color: #64d5ff;
+        font-size: 12px;
+        font-weight: 600;
+          }
+}
+/*large mobile Phablets css start*/
+@media only screen 
+and (min-width : 510px) 
+and (max-width : 768px)  {
+
+/******************************************************************
+----------------------[sectionaccess]--------------------------------
+********************************************************************/
+    .newLogoStyle{
+        height: 60px;
+        margin-left: 35%;
+    }
+        #sectionaccess{
+           height: 100vh;
+           background-image: none;
+           background: #1a283a;
+           background: -webkit-linear-gradient(#1a283a, #616161);
+           background: -o-linear-gradient(#1a283a, #616161);
+           background: -moz-linear-gradient(#1a283a, #616161);
+           background: linear-gradient(#1a283a, #616161);
+           background-size: 100% 100%;
+        }
+        .starttext{
+            color: #fff;
+            padding-top: 250px;
+            padding-bottom: 80px;
+            font-weight: 300;
+        }
+        .starttext h1{
+            font-weight: 200;
+            font-size: 29px;
+        }
+        .startsection{
+            margin-right: 0px;
+            margin-left: 0px;
+            color: aliceblue;
+        }
+        .startsection a{
+            border: 1px solid;
+            color: #fff;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 50px;
+            margin-left: 20px;
+        }
+        .startsection a:hover{
+            text-decoration: none;
+        }
+       #mainframe{
+            background-attachment: inherit!important;  
+            height:100%;
+            background:none;
+            background: #1a283a;
+            background: -webkit-linear-gradient(#1a283a, #616161);
+            background: -o-linear-gradient(#1a283af, #616161);
+            background: -moz-linear-gradient(#1a283a, #616161);
+            background: linear-gradient(#1a283a, #616161); 
+        }
+        #section1 ,#section3 ,#section4{
+             height: 100vh !important; 
+             padding-bottom: 40px!important;
+            }
+        #section2 {
+             height: 100vh !important;
+             margin-bottom: 10px !important;
+             padding-top: 120px;
+            }
+        #section1 h2,#section3 h2,#section4 h2{
+             font-size: 25px; 
+             padding-top: 210px;
+             padding-bottom: 25px;
+        }
+        #section5 {
+              height: 100vh !important;
+          }
+        #section5 h2{
+              font-size: 25px;
+              padding-top:80px;
+              padding-bottom: 0px;
+        }
+        #section2 h2{
+              font-size: 25px; 
+              padding-top: 30px;
+              padding-bottom: 15px;
+        }
+        #section6{
+              height: 100vh !important; 
+              padding-top: 130px;
+        } 
+        #section6 h2{
+              font-size: 25px;
+              padding-top: 30px !important;
+              padding-bottom:25px !important;
+        }
+        .myradio{
+              background-color: rgba(1.6%,1.6%,1.6%,0.4);
+              height:70px !important;
+              width: 90%;
+              color: white;
+              line-height:15px !important;
+              font-weight: 50 !important;
+          }
+        .myradio p{
+              color: #fff;
+              font-size: 16px!important;
+              font-weight:200;
+              text-align: center !important;
+        }
+        .check-with-label:checked + .myradio p{
+              color: white;
+       }
+        .notmobile{
+              display: none;
+              opacity: 0;
+        }
+        .stop{
+            display: none;
+            opacity: 0;
+            margin-top: -60px !important;
+        }
+        .mobileview{
+            display: none;
+        }
+        .compview{
+            display: none;
+        }
+        .notcomp{
+            display: block;
+            margin-top: -170px;
+         }
+       
+         .menu_card ul li img{
+             width:auto !important;
+             
+             height:350px !important;
+         }
+         .number{
+             font-weight: 600;
+             color:black;
+             margin-top:0px;
+             background-color:transparent;
+         }
+        .tabview {
+            display: none;
+        }
+            .mobimgdis{
+             margin-left: 80px;
+        }
+        .mobimglike{
+             margin-right: 90px;
+        }
+        .mobimgdistext{
+            margin-left: 85px;
+        }
+        .skipable{
+            display: block;
+            opacity: 0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2px;
+            color: #616161;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .skipable:hover{
+            color: #64d5ff;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .skipable a{
+             display: block;
+            opacity: 0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2px;
+            color: #616161;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .skipable a:hover{
+            color: #64d5ff;
+            font-size: 12px;
+            font-weight: 600;
+
+        }
+        .compview{
+          display: block;
+       }
+        .form-control {
+          display: block;
+          width: 100%;
+          padding-left: 10px;
+          font-size: 16px;
+          line-height: 1.25;
+          color: #fff;
+          background-color: rgba(1.6%,1.6%,1.6%,0.4);
+          background-image: none;
+          -webkit-background-clip: padding-box;
+                  background-clip: padding-box;
+          border: 0;
+          border-radius: 8px;
+          -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+          -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+        }
+        .form-control:focus{
+         background-color:rgba(204,204,204,0.2);
+         color: #fff;
+         }
+        .customkey{
+        height: 40px;
+        width: 100%;
+        border-radius: 50px;
+        background-color:rgba(1.6%,1.6%,1.6%,0.4);
+        font-size: 20px;
+        color: #fff;
+        border: 0px;
+        margin-bottom:40px;
+        } 
+        .input-group{
+        position: relative;
+        display: -webkit-flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        }
+        .input-group-addon{
+        background-color:rgba(0,0,0,0.4);
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 130px;
+        margin-right: 10px;
+        }
+        .tabview{
+        display: block;
+       }
+}
+
+/*For ipad and large screen*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1023px) {
+
+    
+    .newLogoStyle{
+        margin-left: 40%;
+    }
+        #sectionaccess{
+          height: 100vh;
+          background-image: none;
+           background: #1a283a;
+           background: -webkit-linear-gradient(#1a283a, #616161);
+           background: -o-linear-gradient(#1a283a, #616161);
+           background: -moz-linear-gradient(#1a283a, #616161);
+           background: linear-gradient(#1a283a, #616161);    
+          background-size: 100% 100%;
+        }
+        .starttext{
+            color: #fff;
+            padding-top: 250px;
+            padding-bottom: 80px;
+            font-weight: 300;
+        }
+        .starttext h1{
+            font-weight: 200;
+            font-size: 29px;
+        }
+        .startsection{
+            margin-right: 0px;
+            margin-left: 0px;
+            color: #fff;
+
+        }
+        .startsection a{
+            border: 1px solid;
+            color: #fff;
+            padding-left: 55px;
+            padding-right: 55px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 45px;
+            margin-left: -20px;
+        }
+        .startsection a:hover{
+            text-decoration: none;
+        }
+
+        #section1 ,
+        #section2 ,
+        #section3 ,
+        #section4 {
+            height: 100vh !important; 
+            margin-bottom: 40px!important;
+        }
+        #section1 h2{
+             font-size: 25px !important; 
+             padding-top: 250px !important;
+             padding-bottom: 30px !important;
+        }
+        #section2 h2{
+             font-size: 25px !important; 
+             padding-top: 100px !important;
+             padding-bottom: 30px !important;
+        }
+        #section4 h2{
+             font-size: 25px !important; 
+             padding-top: 160px !important;
+             padding-bottom: 30px !important;
+        }
+        #section3 h2{
+             font-size: 25px !important; 
+             padding-top: 190px !important;
+             padding-bottom: 30px !important;
+        }
+        #section5{
+              height: 100vh !important;
+              padding-bottom: 10px!important;
+              padding-top: 10px !important;
+        }
+        #section5 h2{
+              font-size: 25px;
+              padding-top: 50px!important;
+              padding-bottom: 10px!important;
+        }
+        #section6{
+              height: 100vh !important; 
+              max-height: 200vh;
+        }
+        #section6 h2{
+             font-size: 25px !important;   
+             padding-bottom: 50px!important;
+             padding-top: 90px!important;
+        }
+       .myradio{
+            background-color: rgba(1.6%,1.6%,1.6%,0.4);
+            height:70px !important;
+            width: 100%;
+            color: #fff;
+            line-height:15px !important;
+            font-weight: 50 !important;
+        }
+        .myradio p{
+            color: #fff;
+            font-size: 16px!important;
+            font-weight:200;
+            text-align: center !important;
+        }
+        .notcomp{
+            display: block;
+            margin-top: -180px;
+         }
+        .mobimgdis{
+             margin-left: 150px;
+        }
+        .mobimglike{
+             margin-right: 150px;
+        }
+        .mobimgdistext{
+            margin-left: 155px;
+        }
+        .stop{
+          margin-top: -50px;   
+        }
+        .mobileview{
+            display: none;
+        }
+        .form-control {
+          display: block;
+          width: 100%;
+          padding-left: 10px;
+          font-size: 16px;
+          line-height: 1.25;
+          color: #fff;
+          background-color: rgba(1.6%,1.6%,1.6%,0.4);
+          background-image: none;
+          -webkit-background-clip: padding-box;
+                  background-clip: padding-box;
+          border: 0;
+          border-radius: 8px;
+          -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+          -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+        }
+        .form-control:focus{
+         background-color:rgba(204,204,204,0.2);
+         color: #fff;
+         }
+        .customkey{
+        height: 40px;
+        width: 100%;
+        border-radius: 50px;
+        background-color:rgba(1.6%,1.6%,1.6%,0.4);
+        font-size: 20px;
+        color: #fff;
+        border: 0px;
+        margin-bottom:40px;
+        } 
+        .input-group{
+        position: relative;
+        display: -webkit-flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        }
+        .input-group-addon{
+        background-color:rgba(0,0,0,0.4);
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 130px;
+        margin-right: 10px;
+        }
+        .tabview{
+        display: block;
+       }
+}
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1100px)  {
+        .menu_card ul li img{
+            width:auto;
+            height:auto;
+            max-height: 550px;
+            margin-left: -5px;
+
+        }
+}

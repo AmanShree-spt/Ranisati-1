@@ -1,0 +1,739 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+#footfirst,
+.footwrite b {
+    font-family: Montserrat
+}
+
+body {
+    overflow-x: hidden
+}
+
+#footfirst {
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #616161;
+    color: #fff;
+    font-weight: 400
+}
+/*REV*/
+.r-rev-paddig{
+    margin-top: 30px;
+}
+.footer-cions-rev{
+    text-align: right;
+}
+.footer-details-rev-last{
+    padding-left: 125px;
+}
+.footer-rev-title small{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200;    
+}
+.footer-rev-details{
+    font-size: 28px;
+    font-weight: 100;  
+}
+
+/*REV*/
+#footfirst h2 {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 1.3
+}
+    .footnewtest{
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+    .footnewtest:hover{
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+    .ianimatored a{
+                color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+    .ianimatored a:hover{
+                color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+.footwrite a,
+.footwrite b {
+    font-weight: 300;
+    color: #fff
+}
+
+.footnewtest {
+    margin-top: 25px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    margin-left: -142px;
+    border: 2px solid;
+    font-weight: 300;
+    border-radius: 45px;
+    padding: 10px 50px;
+    -vendor-animation-duration: .5s;
+    -vendor-animation-delay: .2s;
+    animation-duration: .5s;
+    animation-delay: .2s
+}
+
+#footersocial {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+#footersocial a {
+    padding: 40px
+}
+
+#footersocial a i {
+    color: #616161;
+    transform: scale(1.5)
+}
+
+#footermiddle {
+    background-color: #616161;
+    color: #fff;
+    padding-top: 50px
+}
+
+.footwrite {
+    padding-bottom: 20px;
+    line-height: 30px
+}
+
+.chatfoot,
+.phonefoot,
+.writefoot {
+    line-height: 35px;
+    padding-left: 150px
+}
+
+.chatfoot,
+.writefoot {
+    padding-top: 22px
+}
+
+.phonefoot small {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200
+}
+
+.phonefoot span {
+    font-size: 28px;
+    font-weight: 100
+}
+
+.chatfoot small,
+.writefoot small {
+    text-align: center;
+    font-weight: 200
+}
+
+.chatfoot small {
+    font-size: 17px
+}
+
+.chatfoot a {
+    font-size: 28px
+}
+
+.chatfoot a:hover,
+.writefoot a:hover {
+    color: #69c
+}
+
+.writefoot small {
+    font-size: 17px
+}
+
+.writefoot a {
+    font-size: 28px
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.bigfoot {
+    visibility: visible
+}
+
+.smallfoot {
+    visibility: hidden
+}
+
+.ianimator {
+    opacity: 0
+}
+
+.ianimator.animated {
+    opacity: 1
+}
+
+#seo_title {
+    height: auto;
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #000;
+    background-color:rgba(204,204,204,0.0);
+    /*border-bottom: .5px solid #ccc;*/
+}
+#seo_title h1{
+    font-weight: 400;
+    font-family: Montserrat;
+    font-size:16px;
+    color: gray;
+}
+#seo_title p{
+    font-size: 14px;
+    line-height: 25px;
+    color: gray;
+    font-weight:200;
+}
+#LastSectionFooter{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+#LastSectionFooter p{
+    font-size: 14px;
+    color: gray;
+    font-weight:200;
+}
+@media only screen and (min-width:300px) and (max-width:500px) {
+    
+            /*REV*/
+        .r-rev-paddig{
+            margin-top: 30px;
+        }
+        .footer-cions-rev{
+            text-align: center;
+            padding-right: 0;
+        }
+        .footer-details-rev-last{
+            padding-left: 0;
+        }
+        .footer-rev-title {
+            text-align: center
+        }
+        .footer-rev-title small{
+            font-size: 17px;
+            text-align: center;
+            font-weight: 200;    
+        }
+        .footer-rev-details{
+            font-size: 22px;
+            font-weight: 100;  
+            text-align: center
+        }
+        .rev-all-inc{
+            padding-right: 0;
+        }
+        .r-rev-paddig-f{
+            margin-top: 30px;
+        }
+        /*REV*/
+    
+    
+    
+    .chatfoot,
+    .phonefoot {
+        font-family: Montserrat;
+        align-content: center
+    }
+    body {
+        overflow-x: hidden
+    }
+    #footfirst {
+        height: 280px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #616161;
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 400
+    }
+    #footfirst h2,
+    .footnewtest {
+        text-align: center;
+        font-weight: 300
+    }
+    .footwrite {
+        padding-bottom: 40px;
+        line-height: 30px
+    }
+    #footfirst h2 {
+        font-size: 30px
+    }
+    .footer-plus {
+        padding-top: 0
+    }
+    #footersocial {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+    #footersocial a {
+        padding: 0;
+        color: #616161
+    }
+    .mob {
+        padding-top: 10px
+    }
+    #footermiddle {
+        background-color: #616161;
+        color: #fff;
+        padding-top: 50px
+    }
+    .bigfoot {
+        visibility: hidden
+    }
+    .smallfoot {
+        visibility: visible
+    }
+    .footnewtest {
+        margin-top: 18px;
+        position: absolute;
+        font-size: 18px;
+        margin-left: -110px;
+        border: 2px solid;
+        border-radius: 45px;
+        padding: 10px 50px
+    }
+    #seo_title {
+        height: auto;
+        text-align: justify;
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+    .phonefoot {
+        margin-top: 35px
+    }
+    .phonefoot img {
+        margin-left: 140px;
+        font-family: Montserrat;
+        padding-bottom: 10px
+    }
+    .phonefoot small {
+        margin-left: 70px;
+        font-family: Montserrat
+    }
+    #footersocial a i {
+        color: #616161;
+        padding-top: 10px;
+        transform: scale(1)
+    }
+    .sofirst {
+        margin-left: 20px
+    }
+    .sosec {
+        padding-left: 30px
+    }
+    .sothree {
+        padding-left: 50px
+    }
+    .sofour {
+        padding-left: 60px
+    }
+    .sofive {
+        padding-left: 70px
+    }
+    .sosix {
+        padding-left: 80px
+    }
+    .soseven {
+        padding-left: 90px
+    }
+    .soeight {
+        padding-left: 100px
+    }
+    .phonefoot span {
+        margin-left: 40px;
+        font-family: Montserrat;
+        font-size: 22px
+    }
+    .chatfoot img {
+        margin-left: 140px;
+        font-family: Montserrat;
+        padding-bottom: 10px
+    }
+    .chatfoot small,
+    .chatfoot span a {
+        margin-left: 80px;
+        font-family: Montserrat
+    }
+    .chatfoot span a {
+        font-size: 22px
+    }
+    .writefoot img {
+        margin-left: 140px;
+        font-family: Montserrat;
+        padding-bottom: 10px
+    }
+    .writefoot small {
+        margin-left: 90px;
+        font-family: Montserrat
+    }
+    .writefoot span a {
+        margin-left: 15px;
+        font-family: Montserrat;
+        font-size: 22px
+    }
+    .chatfoot,
+    .phonefoot,
+    .writefoot {
+        line-height: 25px;
+        padding-left: 20px
+    }
+}
+
+@media only screen and (min-width:510px) and (max-width:768px) {
+    #footfirst,
+    .chatfoot,
+    .phonefoot span {
+        font-family: Montserrat
+    }
+    body {
+        overflow-x: hidden
+    }
+    #footfirst {
+        height: 200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #616161;
+        color: #fff;
+        font-weight: 400
+    }
+    .footnewtest {
+        margin-top: 30px;
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        margin-left: -110px;
+        border: 2px solid;
+        font-weight: 300;
+        border-radius: 45px;
+        padding: 8px 50px
+    }
+    .myfoot {
+        margin-left: 50px
+    }
+    #footfirst h2 {
+        font-weight: 300;
+        font-size: 28px
+    }
+    .footer-plus {
+        padding-top: 0
+    }
+    #footersocial a,
+    #seo_title {
+        padding-top: 10px
+    }
+    #footersocial {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+    #seo_title,
+    .chatfoot img,
+    .writefoot img {
+        padding-bottom: 10px
+    }
+    #footersocial a i {
+        color: #616161;
+        padding-top: 10px;
+        padding-right: 15px
+    }
+    #footermiddle {
+        background-color: #616161;
+        color: #fff;
+        padding-top: 50px
+    }
+    .mob {
+        margin-top: 50px
+    }
+    .mob i {
+        transform: scale(.8)
+    }
+    .bigfoot {
+        visibility: hidden
+    }
+    .smallfoot {
+        visibility: visible
+    }
+    #seo_title {
+        height: auto;
+        text-align: justify
+    }
+    .phonefoot img {
+        margin-left: 230px;
+        padding-top: 50px
+    }
+    .phonefoot small {
+        margin-left: 150px;
+        line-height: 50px
+    }
+    .phonefoot span {
+        margin-left: 130px;
+        font-size: 22px
+    }
+    .chatfoot {
+        align-content: center
+    }
+    .chatfoot img {
+        margin-left: 230px;
+        font-family: Montserrat
+    }
+    .chatfoot small,
+    .chatfoot span a {
+        margin-left: 165px;
+        font-family: Montserrat
+    }
+    .chatfoot small {
+        line-height: 40px
+    }
+    .chatfoot span a {
+        font-size: 22px
+    }
+    .writefoot img {
+        margin-left: 230px;
+        font-family: Montserrat
+    }
+    .writefoot small {
+        margin-left: 170px;
+        font-family: Montserrat;
+        line-height: 50px
+    }
+    .writefoot span a {
+        margin-left: 100px;
+        font-family: Montserrat;
+        font-size: 22px
+    }
+    .chatfoot,
+    .phonefoot,
+    .writefoot {
+        line-height: 25px;
+        padding-left: 20px
+    }
+    .sofirst {
+        margin-left: 20px
+    }
+    .sosec {
+        padding-left: 30px
+    }
+    .sothree {
+        padding-left: 50px
+    }
+    .sofour {
+        padding-left: 60px
+    }
+    .sofive {
+        padding-left: 70px
+    }
+    .sosix {
+        padding-left: 80px
+    }
+    .soseven {
+        padding-left: 90px
+    }
+    .soeight {
+        padding-left: 100px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    #footfirst,
+    .chatfoot,
+    .phonefoot span {
+        font-family: Montserrat
+    }
+    body {
+        overflow-x: hidden
+    }
+    #footfirst {
+        height: 200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #616161;
+        color: #fff;
+        font-weight: 400
+    }
+    .footnewtest {
+        margin-top: 10px;
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        margin-left: -110px;
+        border: 2px solid;
+        font-weight: 300;
+        border-radius: 45px;
+        padding: 8px 50px
+    }
+    .myfoot {
+        margin-left: 100px
+    }
+    #footfirst h2 {
+        font-weight: 300;
+        font-size: 35px
+    }
+    .footer-plus {
+        padding-top: 0
+    }
+    #footersocial a,
+    #seo_title {
+        padding-top: 10px
+    }
+    #footersocial {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: -190px
+    }
+    #seo_title,
+    .chatfoot img,
+    .writefoot img {
+        padding-bottom: 10px
+    }
+    #footersocial a i {
+        color: #626262;
+        padding-top: 10px;
+        padding-right: 15px
+    }
+    #footermiddle {
+        background-color: #616161;
+        color: #fff;
+        padding-top: 50px
+    }
+    .mob {
+        margin-top: 50px
+    }
+    .mob i {
+        transform: scale(.8)
+    }
+    .bigfoot {
+        visibility: hidden
+    }
+    .smallfoot {
+        visibility: visible
+    }
+    #seo_title {
+        height: auto;
+        text-align: justify
+    }
+    .phonefoot img {
+        margin-left: 320px;
+        padding-top: 50px
+    }
+    .phonefoot small {
+        margin-left: 250px;
+        line-height: 50px
+    }
+    .phonefoot span {
+        margin-left: 230px;
+        font-size: 22px
+    }
+    .chatfoot {
+        align-content: center
+    }
+    .chatfoot img {
+        margin-left: 100px;
+        font-family: Montserrat
+    }
+    .chatfoot small,
+    .chatfoot span a {
+        margin-left: 35px;
+        font-family: Montserrat
+    }
+    .chatfoot small {
+        line-height: 40px
+    }
+    .chatfoot span a {
+        font-size: 22px
+    }
+    .writefoot {
+        position: absolute;
+        margin-top: -135px
+    }
+    .writefoot img {
+        margin-left: 530px;
+        font-family: Montserrat
+    }
+    .writefoot small {
+        margin-left: 470px;
+        font-family: Montserrat;
+        line-height: 50px
+    }
+    .writefoot span a {
+        margin-left: 390px;
+        font-family: Montserrat;
+        font-size: 22px
+    }
+    .chatfoot,
+    .phonefoot,
+    .writefoot {
+        line-height: 25px;
+        padding-left: 20px
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1337px) {
+    .footwrite a,
+    .footwrite b {
+        color: #fff;
+        font-weight: 300
+    }
+    .footwrite {
+        padding-bottom: 20px;
+        line-height: 30px
+    }
+    .chatfoot,
+    .phonefoot,
+    .writefoot {
+        line-height: 35px;
+        padding-left: 150px
+    }
+    .footwrite b {
+        font-family: Montserrat
+    }
+    .chatfoot,
+    .writefoot {
+        padding-top: 22px
+    }
+    .phonefoot small {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 200
+    }
+    .phonefoot span {
+        font-size: 28px;
+        font-weight: 100
+    }
+    .chatfoot small,
+    .writefoot small {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 200
+    }
+    .chatfoot a:hover,
+    .writefoot a:hover {
+        color: #69c
+    }
+    .chatfoot a,
+    .phonefoot a,
+    .writefoot a {
+        font-size: 25px
+    }
+    .chatfoot img,
+    .phonefoot img,
+    .writefoot img {
+        margin-left: -8px;
+        font-family: Montserrat
+    }
+}

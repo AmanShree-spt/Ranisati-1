@@ -1,0 +1,47 @@
+ .navbar-primary-menu li a {
+            font-family: Montserrat;
+            display: block !important;
+            margin: none !important;
+            padding: none !important;
+            border: none !important;
+            font-size: 16px !important;
+            z-index: 999 !important;
+        }
+
+        .nav-label {
+            display: block;
+            margin: none !important;
+            padding: none !important;
+            border: none !important;
+            font-size: 16px !important;
+        }
+
+        .SimpleLogo {
+            margin-left: -10px;
+            margin-top: 0px;
+        }
+
+        /*    .onebig{
+            margin-top: -8px;
+        }*/
+        .opencontact {
+            line-height: 20px;
+        }
+
+        .twobig {
+            margin-top: -17px;
+            margin-left: -10px;
+        }
+
+        .scrooling>.opencontact {
+            line-height: 20px;
+        }
+
+        #menu_items ul ul li a p {
+            border: none;
+        }
+
+        form #website {
+            display: none;
+        }
+

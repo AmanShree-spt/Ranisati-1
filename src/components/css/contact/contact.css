@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+a,a:hover{
+     text-decoration: none;
+     outline: none;
+}
+#head--contact{
+    height:90vh;
+    background-size: 100% 100%;
+    background-image: url('./banner1.jpg');
+    background-attachment: fixed;
+}
+#head--contact::after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    z-index: 99;
+    width: 55%;
+    left: -525px;
+    transform: skew(-99deg);
+    height: 146px;
+    bottom: 0px;
+}
+#head--contact::before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    z-index: 99;
+    width: 50%;
+    transform: skew(-81deg) rotate(0deg);
+    height: 180px;
+    bottom: 0px;
+    right: -557px;
+}
+.heading--contact{
+    color: #fff;
+    font-size:40px;
+    text-align:center;
+    padding-top:250px;
+    font-weight:400;
+    font-family:'Montserrat';  
+}
+#get-started{
+    margin-top:-20px;
+    position: relative
+}
+.start--project{
+    font-weight:600;
+    font-size:15px;
+    text-decoration: none;
+    color: #616161
+}
+.start--project:hover{
+    color: #3c818f
+}
+.img-link{
+    color: #616161;
+    background-color:#fff;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    position:relative;
+    z-index:100;
+    font-size:30px;
+    margin-top: 280px
+}
+.img-link a,
+.img-link a:hover
+{
+    color: #616161;
+    text-decoration:none;
+}
+.img-link i{
+    font-size: 30px;
+    margin-top: 8px;
+    
+}
+.img-link i:hover{
+    color: #3c818f
+}
+.img-link i:hover + .start--project{
+    color: #3c818f !important
+} 
+#form--were{
+    margin-top:110px;
+    height:auto;
+    color:#616161
+}
+#form--were img{
+    margin-bottom:25px;
+    width:64px
+}
+#form--were p{
+    color:#616161;
+    font-weight:600;
+    font-size:15px;
+    line-height:10px;
+    letter-spacing:2px
+}
+/***************************
+  )------Contact Form------(
+****************************/
+#cont-form{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding: 80px 2% 20px  2%;
+    background-size: 100% 100%;
+    background: #1a283a;
+    background: -webkit-linear-gradient(#1a283a, #616161);
+    background: -o-linear-gradient(#1a283af, #616161);
+    background: -moz-linear-gradient(#1a283a, #616161);
+    background: linear-gradient(#1a283a, #616161);
+}
+.label--form{
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    line-height: 50px;
+    text-align: right
+}
+.filled{
+    border: 2px solid #fff;
+    color: #fff !important;
+    outline: none;
+    border-radius: 8px;
+    padding: 15px 5px !Important;
+    font-weight: 500;
+    font-size: 17px;
+    background-color: transparent;
+    margin-left: -15px;
+}
+.filled:focus{
+    border: 2px solid #fff;
+    background-color: transparent
+}
+.bigger-btns{
+    color: #fff;
+    background-color: transparent;
+    padding: 8px 45px;
+    border: 2px solid #fff;
+    border-radius: 55px;
+    font-weight: 600;
+    cursor:pointer;
+    margin-left: -40px;
+   
+}
+/*******************************
+-----------Location-------------
+********************************/
+#location-view{
+    margin: 120px 0px;
+}
+.head--write{
+    color: #fff;
+    font-size: 35px;
+    position: relative;
+    top: -50px;
+    font-weight: 400;
+}
+
+.down{
+    cursor: pointer;
+}
+/**************************************************************
+*******************************************************************
+---------------------Media Screen----------------((((-<><>><><>-))))
+*******************************************************************
+***************************************************************/
+@media only screen 
+    and (min-width:300px) 
+    and (max-width:500px) {
+    /*********** Head Section *********/    
+    #head--contact{
+      height:70vh;
+      background-image: url(./mobilehead.jpg);
+    }
+    .heading--contact{
+      font-size: 26px;
+      padding-top: 190px; 
+    }
+
+    #head--contact::after{
+        width: 50%;
+        left: -452px;
+    }
+        .img-link{
+            margin-top: 160px;
+        }
+    /********** Box Section *********/    
+    #form--were{
+      margin-top:70px;
+      height: auto;
+      color: #616161
+    }
+    .boxes{
+      padding: 20px 0px;
+    }
+    /********** Contact Form **********/
+    #cont-form{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 80px  10% 40px 10%;
+      background: #1a283a;
+      background: -webkit-linear-gradient(#1a283a, #616161);
+      background: -o-linear-gradient(#1a283af, #616161);
+      background: -moz-linear-gradient(#1a283a, #616161);
+      background: linear-gradient(#1a283a, #616161);
+    }
+    .label--form{
+      text-align: left;
+      line-height: 10px;
+      font-weight: 500
+    }
+    .filled{
+      margin-left: 0px;
+      padding: 10px 5px !Important;
+    }
+    /********** LOCATION ***********/
+    #location-view{
+      margin: 50px 0px;
+    }  
+    .material-icons{
+      font-size: 22px;
+        z-index: 99
+    }
+   .head--write{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+    font-weight: 400
+    }
+   #form--were img {
+    margin-bottom: 25px;
+    width: 50px;
+   }
+  .navbar-toggler{
+    margin-left: -1px !important;
+    margin-top: 7px !important;
+    padding-top: 0px !important;
+   } 
+        .bigger-btns{
+            margin-left: -75px;
+        }
+
+         .smallimg {
+             height: 30px !important;
+            margin-left: -10px !important;
+            padding-top: 0px !important;
+        }
+}
+
+
+
+
+
+

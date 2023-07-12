@@ -1,0 +1,1391 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+*,
+body,
+html {
+    margin: 0;
+    padding: 0
+}
+
+.phns span,
+a,
+h1,
+h2,
+h3,
+p {
+    font-family: Montserrat
+}
+
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+#menu_items,
+#menu_items ul {
+    margin: 0;
+    height: 60px;
+    background-color: transparent
+}
+
+
+
+#sectiona {
+    height: 100vh;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/bmimagedump/assets2/img/contact.jpg);
+    background-size: 100% 100%
+}
+
+.custom_nav {
+    background-color: transparent;
+    z-index: 999;
+    height: 60px;
+    padding-top: 15px
+}
+
+.logoimg {
+    padding-left: 30px;
+    float: left
+}
+
+.mobile_menu {
+    display: none
+}
+
+.mobile_toggle_menu i {
+    color: #fff;
+    padding: 1px;
+    line-height: 50px;
+    display: none
+}
+
+#menu_items,
+#menu_items ul ul {
+    padding: 0;
+    text-align: center;
+    width: 100%
+}
+
+#menu_items {
+    float: right;
+    z-index: 999;
+    position: relative
+}
+
+#menu_items ul {
+    list-style: none;
+    padding: 0 20px
+}
+
+#menu_items ul li {
+    display: inline-block;
+    float: right;
+    transition-property: hover
+}
+
+#mobilegrids,
+.custom_menuss,
+.notbigs {
+    display: none
+}
+
+#menu_items ul li a {
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer
+}
+
+#menu_items ul li:hover {
+    background-color: transparent;
+    color: #fff;
+    transition: display .2s;
+    transition-duration: .6s
+}
+
+#menu_items ul ul li {
+    background: #ccc;
+    width: 300px;
+    height: 300;
+    color: #000;
+    transition: .5s
+}
+
+#menu_items ul ul li img {
+    width: 100%
+}
+
+#menu_items ul ul li:hover {
+    background: #ccc;
+    color: #000;
+    transform: .2s;
+    transition-duration: .5s
+}
+
+#menu_items ul ul li a {
+    background: #ccc;
+    height: 200px;
+    color: #000;
+    transition: .5s;
+    padding: 50px 10px 0;
+    display: block
+}
+
+#menu_items ul li:hover>a {
+    color: #fff;
+    transition-duration: .5s
+}
+
+#menu_items ul li:hover>ul {
+    height: 280px;
+    display: block
+}
+
+#menu_items ul ul {
+    background: #ccc;
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0
+}
+
+#menu_items ul .tootltypes:hover:after {
+    position: absolute;
+    bottom: 0;
+    left: 69%;
+    top: 56px;
+    width: 0;
+    height: 0;
+    margin-left: -55px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid;
+    border-left: 15px solid transparent;
+    color: #ccc
+}
+
+#menu_items ul ul li a p {
+    color: #434343;
+    margin-top: 20px;
+    border: 2px solid #434343;
+    border-radius: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 40px;
+    line-height: 35px
+}
+
+#sectiona h1,
+.smallbox a {
+    color: #fff;
+    font-weight: 400
+}
+
+.logo {
+    height: 50px;
+    width: auto
+}
+
+.navbar-toggler {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: -1;
+    top: 0;
+    background: 0 0;
+    border: 0 solid transparent;
+    border-radius: .25rem
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration: none
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%
+}
+
+#sectiona h1 {
+    padding-top: 100px;
+    font-size: 45px;
+    padding-left: 12px
+}
+
+.smallbox {
+    padding-top: 50px;
+    padding-bottom: 120px
+}
+
+.smallbox a {
+    float: left;
+    font-size: 25px;
+/*    background-color: rgba(255, 255, 255, .29);*/
+    border-radius: 45px;
+    border: 2px solid #fff;
+    padding: 12px 42px 12px 55px
+}
+
+.smallbox a:hover {
+    text-decoration: none
+}
+
+.smallbox a i {
+    color: #a2bdb7
+}
+
+.fa-caret-right {
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -29px;
+    display: none
+}
+
+.threebox .chatting,
+.threebox .email {
+    display: block;
+    transform: scale(1.2);
+    font-size: 16px;
+    color: #fff
+}
+
+.threebox .chatting {
+    line-height: 15px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 50%;
+    padding: 5px 0
+}
+
+.chatting img {
+    padding-top: 25px;
+    padding-bottom: 15px
+}
+
+.chatting p {
+    line-height: 2px;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.chatting:hover {
+    text-decoration: none
+}
+
+.chatting .last {
+    padding-bottom: 20px
+}
+
+.threebox .email {
+    line-height: 15px;
+    font-weight: 300;
+    border: 2px solid rgba(255, 255, 255, .8);
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 50%;
+    padding: 5px 0
+}
+
+.email p,
+.phnnumber,
+.phns span {
+    font-weight: 400
+}
+
+.email img {
+    padding-top: 25px;
+    padding-bottom: 15px
+}
+
+.email p {
+    line-height: 2px;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.email:hover {
+    text-decoration: none
+}
+
+.email .last {
+    padding-bottom: 20px
+}
+
+.phns {
+    transform: scale(1.3);
+    margin-left: -40px;
+    margin-right: -40px;
+    left: -25px
+}
+
+.phns span {
+    font-size: 16px;
+    color: #fff
+}
+
+.phnlogo {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 40px
+}
+
+.phnnumber {
+    line-height: 1px;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 10px
+}
+
+.detailssec h2,
+.smallchota {
+    font-weight: 200;
+    color: #fff
+}
+
+.smallchota {
+    font-size: 16px;
+    margin-top: -35px
+}
+
+#notbig {
+    display: none
+}
+
+.detailssec {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #6f6f6f;
+    height: 115vh;
+    position: relative
+}
+
+.detailssec h2 {
+    padding-bottom: 160px
+}
+
+.detailssec p {
+    color: #fff;
+    padding-top: 12px;
+    font-weight: 400
+}
+
+.upperone {
+    padding-bottom: 80px
+}
+
+.formpart {
+    padding-top: 40px;
+    padding-bottom: 50px
+}
+
+.formpart h2 {
+    font-weight: 200;
+    color: #626262;
+    padding-bottom: 40px
+}
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .custom_nav {
+        display: none
+    }
+    .mobile_menu {
+        display: block
+    }
+    #menu_items,
+    .loca {
+        display: none
+    }
+    .custom_menuss {
+        display: block;
+        color: #000
+    }
+    .list-group {
+        background-color: #000;
+        width: 100%
+    }
+    .navbar-light {
+        background-color: rgba(198, 197, 197, .95);
+        position: fixed;
+        width: 100%;
+        z-index: 999
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:focus,
+    .navbar-light .navbar-toggler:hover {
+        color: #fff
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+        text-align: left;
+        padding: 15px
+    }
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.disabled,
+    .navbar-light .navbar-nav .nav-link.open,
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .open>.nav-link {
+        color: #fff
+    }
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 3px 3px 3px 80px;
+        clear: both;
+        font-weight: 400;
+        color: #000;
+        text-align: inherit;
+        white-space: nowrap;
+        background: 0 0;
+        border: none
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: #292b2c;
+        text-align: left;
+        list-style: none;
+        background-color: #ccc;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: none;
+        border-radius: .25rem
+    }
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        color: #1d1e1f;
+        text-decoration: none;
+        background-color: #f7f7f9
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #0275d8
+    }
+    #sub-menu {
+        background-color: #fff
+    }
+    .notbigs {
+        display: block
+    }
+    body {
+        overflow-y: hidden
+    }
+    #sectiona {
+        height: 100vh;
+        background-image: url(https://s3.ap-south-1.amazonaws.com/bmimagedump/assets2/img/ContactPageBackgroundmobile.png);
+        background-size: 100% 100%
+    }
+    #sectiona h1 {
+        font-weight: 200;
+        color: #fff;
+        padding-top: 120px;
+        font-size: 28px;
+        text-align: center
+    }
+    .smallbox {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px
+    }
+    .smallbox a {
+        float: left;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+/*        background-color: rgba(255, 255, 255, .29);*/
+        border-radius: 45px;
+        padding: 12px 52px 12px 60px
+    }
+    .threebox .chatting,
+    .threebox .email {
+        font-size: 12px;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: 300;
+        display: block
+    }
+    .smallbox a:hover {
+        text-decoration: none
+    }
+    .smallbox a i {
+        color: #a2b8b1
+    }
+    .threebox .chatting {
+        color: #fff;
+        line-height: 15px;
+        border: 2px solid #fff;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 50%;
+        float: left
+    }
+    .chatting img {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .chatting p {
+        line-height: 2px
+    }
+    .chatting:hover {
+        text-decoration: none
+    }
+    .chatting .last {
+        padding-bottom: 10px
+    }
+    .threebox .email {
+        color: #fff;
+        line-height: 15px;
+        border: 2px solid #fff;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 50%;
+        float: right
+    }
+    .fa-caret-right {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: -23px
+    }
+    .email img {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .email p {
+        line-height: 2px
+    }
+    .email:hover {
+        text-decoration: none
+    }
+    .email .last {
+        padding-bottom: 10px
+    }
+    .phnlogo {
+        padding-top: 5px;
+        margin-bottom: 0!important
+    }
+    .phnnumber {
+        line-height: 8px;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: -10PX;
+        color: #fff
+    }
+    .small {
+        color: #fff
+    }
+    #notsmall {
+        display: none
+    }
+    #notbig {
+        display: block
+    }
+    .detailssec {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        background-color: #6f6f6f;
+        height: auto
+    }
+    .detailssec h2 {
+        font-weight: 200;
+        color: #fff;
+        padding-bottom: 20px;
+        font-size: 22px
+    }
+    .fourblock {
+        padding-top: 50px
+    }
+    .detailssec p {
+        color: #fff;
+        padding-top: 12px;
+        font-weight: 200
+    }
+    .upperone {
+        padding-bottom: 0
+    }
+    .formpart {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        height: auto
+    }
+    .formpart h2 {
+        font-weight: 200;
+        color: #626262;
+        padding-bottom: 40px
+    }
+    form {
+        padding-left: 1px
+    }
+}
+
+@media only screen and (min-width:510px) and (max-width:768px) {
+    .chatting:hover,
+    .dropdown-item:focus,
+    .dropdown-item:hover,
+    .email:hover,
+    .smallbox a:hover {
+        text-decoration: none
+    }
+    .custom_nav {
+        display: none
+    }
+    .mobile_menu {
+        display: block
+    }
+    #menu_items,
+    .loca {
+        display: none
+    }
+    .custom_menuss {
+        display: block;
+        color: #000
+    }
+    .list-group {
+        background-color: #000;
+        width: 100%
+    }
+    .navbar-light {
+        background-color: rgba(198, 197, 197, .95);
+        position: fixed;
+        width: 100%;
+        z-index: 999
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:focus,
+    .navbar-light .navbar-toggler:hover {
+        color: #fff
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+        text-align: left;
+        padding: 15px
+    }
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.disabled,
+    .navbar-light .navbar-nav .nav-link.open,
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .open>.nav-link {
+        color: #fff
+    }
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 3px 3px 3px 80px;
+        clear: both;
+        font-weight: 400;
+        color: #000;
+        text-align: inherit;
+        white-space: nowrap;
+        background: 0 0;
+        border: none
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: #292b2c;
+        text-align: left;
+        list-style: none;
+        background-color: #ccc;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: none;
+        border-radius: .25rem
+    }
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        color: #1d1e1f;
+        background-color: #f7f7f9
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #0275d8
+    }
+    #sub-menu {
+        background-color: #fff
+    }
+    .notbigs {
+        display: block
+    }
+    body {
+        overflow-y: hidden
+    }
+    #sectiona {
+        height: 100vh;
+        background-image: url(https://s3.ap-south-1.amazonaws.com/bmimagedump/assets2/img/ContactPageBackgroundmobile.png);
+        background-size: 100% 100%
+    }
+    #sectiona h1 {
+        font-weight: 200;
+        color: #fff;
+        padding-top: 160px;
+        font-size: 28px;
+        text-align: center
+    }
+    .smallbox {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 110px
+    }
+    .smallbox a {
+        float: left;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, .29);
+        border-radius: 45px;
+        padding: 12px 52px 12px 60px
+    }
+    .threebox .chatting,
+    .threebox .email {
+        font-size: 12px;
+        margin-top: 30px;
+        display: block
+    }
+    .smallbox a i {
+        color: #a2b8b1
+    }
+    .threebox .chatting {
+        color: #fff;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 15px;
+        font-weight: 300;
+        border: 2px solid #fff;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 50%;
+        float: left
+    }
+    .chatting img {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .chatting p {
+        line-height: 2px
+    }
+    .chatting .last {
+        padding-bottom: 10px
+    }
+    .threebox .email {
+        color: #fff;
+        margin-left: 0;
+        margin-right: -30px;
+        line-height: 15px;
+        font-weight: 300;
+        border: 2px solid #fff;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 50%;
+        float: right
+    }
+    .fa-caret-right {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: -23px
+    }
+    .email img {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .email p {
+        line-height: 2px
+    }
+    .email .last {
+        padding-bottom: 10px
+    }
+    .phns {
+        margin-left: 50px
+    }
+    .phnlogo {
+        padding-top: 5px;
+        margin-bottom: 0!important
+    }
+    .phnnumber {
+        line-height: 8px;
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: -10PX;
+        color: #fff
+    }
+    .small {
+        color: #fff
+    }
+    #notsmall {
+        display: none
+    }
+    #notbig {
+        display: block
+    }
+    form {
+        padding-left: 1px
+    }
+    .detailssec {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        background-color: #6f6f6f;
+        height: 100vh
+    }
+    .detailssec h2,
+    .formpart,
+    .formpart h2 {
+        padding-bottom: 40px
+    }
+    .detailssec h2 {
+        font-weight: 200;
+        color: #fff;
+        font-size: 25px
+    }
+    .fourblock {
+        padding-top: 50px
+    }
+    .formpart {
+        padding-top: 60px;
+        height: 105vh
+    }
+    .formpart h2 {
+        font-weight: 200;
+        color: #626262;
+        font-size: 30px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .chatting:hover,
+    .dropdown-item:focus,
+    .dropdown-item:hover,
+    .email:hover,
+    .smallbox a:hover {
+        text-decoration: none
+    }
+    .custom_nav {
+        display: none
+    }
+    .mobile_menu {
+        display: block
+    }
+    #menu_items,
+    .loca {
+        display: none
+    }
+    .custom_menuss {
+        display: block;
+        color: #000
+    }
+    .list-group {
+        background-color: #000;
+        width: 100%
+    }
+    .navbar-light {
+        background-color: rgba(198, 197, 197, .95);
+        position: fixed;
+        width: 100%;
+        z-index: 999
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:focus,
+    .navbar-light .navbar-toggler:hover {
+        color: #fff
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+        text-align: left;
+        padding: 15px
+    }
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.disabled,
+    .navbar-light .navbar-nav .nav-link.open,
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .open>.nav-link {
+        color: #fff
+    }
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 3px 3px 3px 80px;
+        clear: both;
+        font-weight: 400;
+        color: #000;
+        text-align: inherit;
+        white-space: nowrap;
+        background: 0 0;
+        border: none
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: #292b2c;
+        text-align: left;
+        list-style: none;
+        background-color: #ccc;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: none;
+        border-radius: .25rem
+    }
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        color: #1d1e1f;
+        background-color: #f7f7f9
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #0275d8
+    }
+    #sub-menu {
+        background-color: #fff
+    }
+    .notbigs {
+        display: block
+    }
+    body {
+        overflow-y: hidden
+    }
+    #sectiona {
+        height: 100vh;
+        background-image: url(https://s3.ap-south-1.amazonaws.com/bmimagedump/assets2/img/bluemasonscontacipad.png);
+        background-size: 100% 100%
+    }
+    #sectiona h1 {
+        font-weight: 200;
+        color: #fff;
+        padding-top: 160px;
+        font-size: 28px;
+        text-align: center
+    }
+    .smallbox {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 200px
+    }
+    .smallbox a {
+        float: left;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, .29);
+        border-radius: 45px;
+        padding: 12px 52px
+    }
+    .threebox .chatting,
+    .threebox .email {
+        font-size: 12px;
+        margin-top: 50px;
+        display: block
+    }
+    .smallbox a i {
+        color: #a2b8b1
+    }
+    .threebox .chatting {
+        color: #fff;
+        margin-left: 85px;
+        margin-right: 50px;
+        line-height: 15px;
+        font-weight: 300;
+        border: 2px solid #fff;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 50%;
+        float: left
+    }
+    .chatting img {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .chatting p {
+        line-height: 2px
+    }
+    .chatting .last {
+        padding-bottom: 10px
+    }
+    .threebox .email {
+        color: #fff;
+        margin-left: 0;
+        margin-right: -30px;
+        line-height: 15px;
+        font-weight: 300;
+        border: 2px solid #fff;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 50%;
+        float: right
+    }
+    .fa-caret-right {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: -23px
+    }
+    .email img {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .email p {
+        line-height: 2px
+    }
+    .email .last {
+        padding-bottom: 10px
+    }
+    .phns {
+        margin-left: 80px
+    }
+    .phnlogo {
+        padding-top: 5px;
+        margin-bottom: 0!important
+    }
+    .phnnumber {
+        line-height: 8px;
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: -10PX;
+        color: #fff
+    }
+    .small {
+        color: #fff
+    }
+    #notsmall {
+        display: none
+    }
+    #notbig {
+        display: block
+    }
+    form {
+        padding-left: 1px
+    }
+    .detailssec {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        background-color: #6f6f6f;
+        height: 100vh
+    }
+    .detailssec h2 {
+        font-weight: 200;
+        color: #fff;
+        padding-bottom: 70px;
+        font-size: 25px
+    }
+    .fourblock {
+        padding-top: 50px
+    }
+    .formpart {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        height: 105vh
+    }
+    .formpart h2 {
+        font-weight: 200;
+        color: #626262;
+        padding-bottom: 40px;
+        font-size: 30px
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1100px) {
+    .custom_nav {
+        display: none
+    }
+    .mobile_menu {
+        display: block
+    }
+    #menu_items,
+    .loca {
+        display: none
+    }
+    .custom_menuss {
+        display: block;
+        color: #000
+    }
+    .list-group {
+        background-color: #000;
+        width: 100%
+    }
+    .navbar-light {
+        background-color: rgba(198, 197, 197, .95);
+        position: fixed;
+        width: 100%;
+        z-index: 999
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:focus,
+    .navbar-light .navbar-toggler:hover {
+        color: #fff
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+        text-align: left;
+        padding: 15px
+    }
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.disabled,
+    .navbar-light .navbar-nav .nav-link.open,
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .open>.nav-link {
+        color: #fff
+    }
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 3px 3px 3px 80px;
+        clear: both;
+        font-weight: 400;
+        color: #000;
+        text-align: inherit;
+        white-space: nowrap;
+        background: 0 0;
+        border: none
+    }
+    #sectiona h1,
+    .smallbox a {
+        font-weight: 200;
+        color: #fff
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: #292b2c;
+        text-align: left;
+        list-style: none;
+        background-color: #ccc;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: none;
+        border-radius: .25rem
+    }
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        color: #1d1e1f;
+        text-decoration: none;
+        background-color: #f7f7f9
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #0275d8
+    }
+    #sub-menu {
+        background-color: #fff
+    }
+    .notbigs {
+        display: block
+    }
+    body {
+        overflow-y: hidden
+    }
+    #sectiona h1 {
+        padding-top: 150px;
+        font-size: 45px;
+        padding-left: 12px
+    }
+    .smallbox {
+        padding-top: 50px;
+        padding-bottom: 120px
+    }
+    .smallbox a {
+        float: left;
+        font-size: 22px;
+        background-color: rgba(255, 255, 255, .29);
+        border-radius: 45px;
+        padding: 12px 24px 12px 43px
+    }
+    .smallbox a:hover {
+        text-decoration: none
+    }
+    .smallbox a i {
+        color: #a2bdb7
+    }
+    .fa-caret-right {
+        position: absolute;
+        margin-left: 110px;
+        margin-top: -29px;
+        display: none
+    }
+    .threebox .chatting,
+    .threebox .email {
+        color: #fff;
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        transform: scale(1.2);
+        font-weight: 300;
+        font-size: 16px
+    }
+    .threebox .chatting {
+        line-height: 15px;
+        border: 2px solid rgba(255, 255, 255, .8);
+        border-radius: 50%;
+        padding: 5px 0
+    }
+    .chatting img {
+        padding-top: 25px;
+        padding-bottom: 15px
+    }
+    .chatting p {
+        line-height: 2px;
+        padding-left: 5px;
+        padding-right: 5px
+    }
+    .chatting:hover {
+        text-decoration: none
+    }
+    .chatting .last {
+        padding-bottom: 20px
+    }
+    .threebox .email {
+        line-height: 15px;
+        border: 2px solid rgba(255, 255, 255, .8);
+        border-radius: 50%;
+        padding: 5px 0
+    }
+    .email img {
+        padding-top: 25px;
+        padding-bottom: 15px
+    }
+    .email p {
+        line-height: 2px;
+        padding-left: 5px;
+        padding-right: 5px
+    }
+    .email:hover {
+        text-decoration: none
+    }
+    .email .last {
+        padding-bottom: 20px
+    }
+    .phns {
+        transform: scale(1.3);
+        margin-left: -40px;
+        margin-right: -40px;
+        left: -25px
+    }
+    .phns span {
+        font-weight: 300;
+        font-family: Montserrat;
+        font-size: 16px;
+        color: #fff
+    }
+    .phnnumber,
+    .smallchota {
+        color: #fff;
+        font-weight: 200
+    }
+    .phnlogo {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-bottom: 40px
+    }
+    .phnnumber {
+        line-height: 1px;
+        font-size: 25px;
+        margin-top: 10px
+    }
+    .smallchota {
+        font-size: 16px;
+        margin-top: -35px
+    }
+    #notbig {
+        display: none
+    }
+    #sectionb{
+        height: 105vh;
+
+    }
+    .formpart {
+        padding-top: 55px;
+        padding-bottom: 10px;
+    }
+    .detailssec {
+        padding-top: 55px;
+        padding-bottom: 10px;
+        background-color: #6f6f6f;
+        height: 105vh;
+        position: relative;
+    }
+    .detailssec h2 {
+        padding-bottom:100px;
+        font-size: 30px;
+    }
+}

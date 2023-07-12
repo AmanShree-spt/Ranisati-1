@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1140px) and (min-width: 300px)
+{
+a,span,i,p{
+    outline: none;
+}
+.navbar-toggler {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  padding-top: 8px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: transparent;
+  border: 0px solid transparent;
+  border-radius: 0.25rem;
+  margin-left: -10px;
+  outline: none;
+}
+    .ScrollLogo{
+        display: none;
+    }
+.navbar-toggler-left{
+    outline: none;
+}
+.navbar-toggler i{
+    outline: none;
+}
+.navbar-toggler i img{
+    outline: none;
+}
+.navbar-brand {
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+  padding-left: 30px;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-primary {
+  background-color: #fff;
+  opacity: 0.98;
+  color: 000;
+  bottom: 0px;
+  left: 0px;
+  position:fixed;
+  top: 52px;
+  margin-bottom: 0;
+  width: 0px;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+overflow: auto;
+ -webkit-box-shadow: 0px 0.5px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0.5px 5px -1px rgba(0,0,0,0.75);
+         box-shadow: 0px 0.5px 5px -1px rgba(0,0,0,0.75);
+}
+
+.navbar-primary.collapsed {
+  width: 250px;
+    
+}
+.navbar-primary.collapsed .glyphicon {
+  font-size: 22px;
+}
+.opencontact{
+    line-height: 40px;
+    color: #fff;
+    font-weight: 400;
+    padding-right: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.opencontact:hover{
+text-decoration: none;
+    color: #fff;
+}
+
+    .scrooling> .opencontact{
+        color: #000;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .smallimg{
+        height: 30px;
+        margin-left: -2px;
+        padding-top: -5px;
+    }
+    .biglogo{
+        margin-top: -2px;
+    }
+.navbar-primary-menu
+ {
+  margin:0;
+  padding-left:0;
+  padding-top:0;
+  margin-top: 55px;
+  list-style: none;
+  
+}
+    .navbar-primary-menu li{
+        margin-top: -30px;
+    }
+.navbar-primary-menu li a {
+  display: block;
+  padding: 18px 15px;
+  text-align: left;
+  border-bottom:solid 0px #444;
+  color: #000;
+font-size: 16px !important;
+  transition: border-left 1s;
+-webkit-transition: border-left 1s; /* Safari 3.1 to 6.0 */
+    
+}
+
+.navbar-primary-menu li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-primary-menu li a .glyphicon {
+  margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+  color: orchid;
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+.collpsemenusub{
+    padding-left: 20px;
+    background-color: #fff;
+    color: black;
+}
+.collpsemenusub .subsec{
+    color: black;
+    padding-left: 20px;
+    
+}
+.collpsemenusub .subsec:hover{
+    color: black;
+}
+
+    .navbar-light .navbar-brand, 
+    .navbar-light .navbar-toggler {
+    color: #fff;
+    outline: none;
+    }
+    .navbar-light {
+    background-color:transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 60px;
+ -webkit-transition: background-color 0.1s ease;
+   transition:background-color 0.1s ease;
+    
+
+   }
+    .navbar-light.scrooling {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    z-index: 999;
+    -webkit-transition:  0.4s ease;
+    transition: 0.4s ease;
+    -webkit-box-shadow: 0px 0.5px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0.5px 5px -1px rgba(0,0,0,0.75);
+         box-shadow: 0px 0.5px 5px -1px rgba(0,0,0,0.75);
+   }
+  
+}
+
+
+
+
