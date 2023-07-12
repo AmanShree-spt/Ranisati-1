@@ -185,7 +185,7 @@ function InteriorDesign() {
 
               </div>
 
-              <div className="modal fade bd-example-modal-lg show" role="dialog" aria-labelledby="myLargeModalLabel"
+              <div className="modal fade bd-example-modal-lg " role="dialog" aria-labelledby="myLargeModalLabel"
                 tabindex="-1" style={{ display: 'block' }}>
                 <div className="modal-dialog modal-lg">
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close">
