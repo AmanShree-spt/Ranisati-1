@@ -36,7 +36,7 @@ function InteriorDesignHotel() {
   const gridStyle = {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-    gridAutoRows: 'minmax(80%, auto)',
+    gridAutoRows: 'minmax(50%, auto)',
     height: '80vh',
     gap: '10px'
   };
@@ -56,7 +56,7 @@ function InteriorDesignHotel() {
 
       <div id="sectiontops">
         <h1 className="text-center">
-        Eye-popping Hotel Interior Designer Themes!
+          Eye-popping Hotel Interior Designer Themes!
         </h1>
 
         <div className="row" id="comp-only">
@@ -114,7 +114,7 @@ function InteriorDesignHotel() {
 
         <div className="swiper-container" id="mob-only">
 
-          <div className="swiper-wrapper">
+          <div className="swiper-wrapper" style={{ width: '100%', overflowX: 'scroll' }}>
 
 
             <div className="menuscrow swiper-slide">

@@ -36,7 +36,7 @@ function InteriorDesign() {
   const gridStyle = {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-    gridAutoRows: 'minmax(80%, auto)',
+    gridAutoRows: 'minmax(50%, auto)',
     height: '80vh',
     gap: '10px'
   };
@@ -114,7 +114,7 @@ function InteriorDesign() {
 
         <div className="swiper-container" id="mob-only">
 
-          <div className="swiper-wrapper">
+          <div className="swiper-wrapper" style={{ width: '100%', overflowX: 'scroll' }}>
 
 
             <div className="menuscrow swiper-slide">

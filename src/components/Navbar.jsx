@@ -49,24 +49,24 @@ function Navbar() {
             <a href="/howitworks"><span className="nav-label"> How it Works</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
 
-            <a href="interior-design">
+            <a href="/interior-design">
               <span className="nav-label"> Our Designs</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-18px' }}>
             </span>
             <ul className="collpsemenusub">
-              <a href={"http://bluemasons.com/interior-designers/hotel"} className="subsec">
+              <a href={"/interior-design/hotel"} className="subsec">
                 <img width="36px;" src={"/img/hotel_category.png"} alt="Hotel" /> &nbsp;&nbsp; Hotel
               </a>
-              <a href={"http://bluemasons.com/interior-designers/showroom"} className="subsec">
+              <a href={"/interior-design/others"} className="subsec">
                 <img width="36px;" src={"/img/showroom_category.png"} alt="Showroom" /> &nbsp;&nbsp; Showroom
               </a>
-              <a href={"http://bluemasons.com/interior-designers/restaurant"} className="subsec">
+              <a href={"/interior-design/restaurant"} className="subsec">
                 <img width="36px;" src={"/img/restaurant_category.png"} alt="Restaurant" /> &nbsp;&nbsp; Restaurant
               </a>
-              <a href={"http://bluemasons.com/interior-designers/office"} className="subsec">
+              <a href={"/interior-design/office"} className="subsec">
                 <img width="36px;" src={"/img/office_category.png"} alt="Office" /> &nbsp;&nbsp; Office
               </a>
-              <a href={"http://bluemasons.com/interior-designers/home"} className="subsec">
+              <a href={"/interior-design/"} className="subsec">
                 <img width="36px;" src={'/img/home_category.png'} alt="Home" /> &nbsp;&nbsp; Home
               </a>
             </ul>
@@ -84,41 +84,41 @@ function Navbar() {
             </div>
             <ul>
               <li className="notlist">
-                <a style={{ color: '#616161', fontWeight: '500' }} target="_blank" href={"start-your-project"}>Get Started</a>
+                <a style={{ color: '#616161', fontWeight: '500' }} target="_blank" href={"/start-your-project"}>Get Started</a>
               </li>
-              <li><a style={{ color: '#616161', fontWeight: '500' }} href={"contact"}>Contact</a></li>
-              <li><a style={{ color: '#616161', fontWeight: '500' }} href={"howitworks"}>How it works</a></li>
+              <li><a style={{ color: '#616161', fontWeight: '500' }} href={"/contact"}>Contact</a></li>
+              <li><a style={{ color: '#616161', fontWeight: '500' }} href={"/howitworks"}>How it works</a></li>
               <li className="tootltypes">
-                <a style={{ color: '#616161', fontWeight: '500' }} href={"interior-design"}>Our Design</a>
+                <a style={{ color: '#616161', fontWeight: '500' }} href={"/interior-design"}>Our Design</a>
                 <ul className="row loca">
                   <h4 className="text-center"> Explore Our Designs </h4>
                   <li className="col-1"></li>
                   <li className="col-2">
-                    <a href={"http://bluemasons.com/interior-designers/hotel"}>
+                    <a href={"/interior-design/hotel"}>
                       <img className="dropimg" src={"/img/hotel_category.png"} alt="Hotel" /><br />
                       <p style={{ border: 'none' }} >Hotel</p>
                     </a>
                   </li>
                   <li className="col-2">
-                    <a href={"http://bluemasons.com/interior-designers/showroom"}>
+                    <a href={"/interior-design/others"}>
                       <img className="dropimg" src="/img/showroom_category.png" alt="Showroom" /><br />
-                      <p style={{ border: 'none' }}>Showroom</p>
+                      <p style={{ border: 'none' }}>Others</p>
                     </a>
                   </li>
                   <li className="col-2">
-                    <a href={"http://bluemasons.com/interior-designers/restaurant"}>
+                    <a href={"/interior-design/restaurant"}>
                       <img className="dropimg" src={"/img/restaurant_category.png"} alt="Restaurant" /><br />
                       <p style={{ border: 'none' }}>Restaurant</p>
                     </a>
                   </li>
                   <li className="col-2">
-                    <a href={"http://bluemasons.com/interior-designers/office"}>
+                    <a href={"/interior-design/office"}>
                       <img className="dropimg" src={"/img/office_category.png"} alt="Office" /><br />
                       <p style={{ border: 'none' }}>Office</p>
                     </a>
                   </li>
                   <li className="col-2">
-                    <a href={"http://bluemasons.com/interior-designers/home"}>
+                    <a href={"/interior-design/"}>
                       <img className="dropimg" src={"/img/home_category.png"} alt="Home" /><br />
                       <p style={{ border: 'none' }}>Home</p>
                     </a>
