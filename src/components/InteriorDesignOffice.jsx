@@ -57,53 +57,54 @@ function InteriorDesignOffice() {
 
       <div id="sectiontops">
         <h1 className="text-center">
-          Spectacular Home Interior Designer Ideas for You!
+          Future-ready Office Interior Designer Concepts!
         </h1>
 
         <div className="row" id="comp-only">
           <div className="col-md-1"></div>
 
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat " onClick={() => { setTag("home") }}>
-
+            <a className="menuofcat " href="/interior-design/">
               <span>
                 <img src="/img/home_category.png" />
                 <br />
                 <p className="text-center">Home</p>
               </span>
-
             </a>
           </div>
 
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat" onClick={() => { setTag("office") }}>
+            <a className="menuofcat" href="/interior-design/office">
               <span className="activecat">
                 <img src="/img/office_category.png" /><br />
                 <p className="text-center">Office</p>
               </span>
             </a>
           </div>
+
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat " onClick={() => { setTag("restaurant") }}>
+            <a className="menuofcat " href="/interior-design/restaurant">
               <span className=" ">
                 <img src="/img/restaurant_category.png" /><br />
                 <p className="text-center">Restaurant</p>
               </span>
             </a>
           </div>
+
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat" onClick={() => { setTag("others") }}>
-              <span className=" ">
-                <img src="/img/showroom_category.png" /><br />
-                <p className="text-center">Showroom</p>
-              </span>
-            </a>
-          </div>
-          <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat" onClick={() => { setTag("hotel") }}>
+            <a className="menuofcat" href="/interior-design/hotel">
               <span className=" ">
                 <img src="/img/hotel_category.png" /><br />
                 <p className="text-center">Hotel</p>
+              </span>
+            </a>
+          </div>
+
+          <div className="col-md-2 col-sm-4 col-6" align="center">
+            <a className="menuofcat" href="/interior-design/others">
+              <span className=" ">
+                <img src="/img/others_category.png" /><br />
+                <p className="text-center">Others</p>
               </span>
             </a>
           </div>
@@ -118,18 +119,16 @@ function InteriorDesignOffice() {
 
 
             <div className="menuscrow swiper-slide">
-              <a className="menuofcat " href="https://www.bluemasons.com/interior-designers/home">
-
+              <a className="menuofcat " href="/interior-design/">
                 <span>
                   <img src="/img/home_category.png" /><br />
                   <p className>Home</p>
                 </span>
-
               </a>
             </div>
 
             <div className="menuscrow swiper-slide">
-              <a className="menuofcat" href="https://www.bluemasons.com/interior-designers/office">
+              <a className="menuofcat" href="/interior-design/office">
                 <span className="activecat">
                   <img src="/img/office_category.png" /><br />
                   <p className>Office</p>
@@ -138,7 +137,7 @@ function InteriorDesignOffice() {
             </div>
 
             <div className="menuscrow swiper-slide">
-              <a className="menuofcat " href="https://www.bluemasons.com/interior-designers/restaurant">
+              <a className="menuofcat " href="/interior-design/restaurant">
                 <span className>
                   <img src="/img/restaurant_category.png" /><br />
                   <p className>Restaurant</p>
@@ -147,16 +146,16 @@ function InteriorDesignOffice() {
             </div>
 
             <div className="menuscrow swiper-slide">
-              <a className="menuofcat" href="https://www.bluemasons.com/interior-designers/showroom">
+              <a className="menuofcat" href="/interior-design/others">
                 <span className>
-                  <img src="/img/showroom_category.png " /><br />
-                  <p>Showroom</p>
+                  <img src="/img/others_category.png " /><br />
+                  <p>Others</p>
                 </span>
               </a>
             </div>
 
             <div className="menuscrow swiper-slide">
-              <a className="menuofcat" href="https://www.bluemasons.com/interior-designers/hotel">
+              <a className="menuofcat" href="/interior-design/hotel">
                 <span className>
                   <img src="/img/hotel_category.png" /><br />
                   <p>Hotel</p>
@@ -166,7 +165,7 @@ function InteriorDesignOffice() {
           </div>
         </div>
       </div>
-
+      <br />
 
       <div className="container-fluid" style={{ overflowY: 'scroll' }}>
         <div className="row" style={{}}>
@@ -268,7 +267,7 @@ function InteriorDesignOffice() {
       </div>
 
 
-
+      <br />
       <Footer />
     </>
   );
