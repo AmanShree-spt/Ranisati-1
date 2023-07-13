@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
@@ -8,7 +9,7 @@ import './css/interior/animate.css';
 import './css/interior/styleimagepage.css';
 import classnames from 'classnames';
 
-function InteriorDesign() {
+function InteriorDesignOffice() {
 
   const [tag, setTag] = useState("home");
   const [selectedModalImage, setSelectedModalImage] = useState(null);
@@ -49,7 +50,7 @@ function InteriorDesign() {
     });
     return images;
   };
-  const images = importAll(require.context("/img/sample_photos/home", false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context("/img/sample_photos/office", false, /\.(png|jpe?g|svg)$/));
   return (
     <>
       <Navbar />
@@ -65,7 +66,7 @@ function InteriorDesign() {
           <div className="col-md-2 col-sm-4 col-6" align="center">
             <a className="menuofcat " onClick={() => { setTag("home") }}>
 
-              <span className="activecat">
+              <span>
                 <img src="/img/home_category.png" />
                 <br />
                 <p className="text-center">Home</p>
@@ -76,7 +77,7 @@ function InteriorDesign() {
 
           <div className="col-md-2 col-sm-4 col-6" align="center">
             <a className="menuofcat" onClick={() => { setTag("office") }}>
-              <span className=" ">
+              <span className="activecat">
                 <img src="/img/office_category.png" /><br />
                 <p className="text-center">Office</p>
               </span>
@@ -119,7 +120,7 @@ function InteriorDesign() {
             <div className="menuscrow swiper-slide">
               <a className="menuofcat " href="https://www.bluemasons.com/interior-designers/home">
 
-                <span className="activecat">
+                <span>
                   <img src="/img/home_category.png" /><br />
                   <p className>Home</p>
                 </span>
@@ -129,7 +130,7 @@ function InteriorDesign() {
 
             <div className="menuscrow swiper-slide">
               <a className="menuofcat" href="https://www.bluemasons.com/interior-designers/office">
-                <span className>
+                <span className="activecat">
                   <img src="/img/office_category.png" /><br />
                   <p className>Office</p>
                 </span>
@@ -272,4 +273,4 @@ function InteriorDesign() {
     </>
   );
 }
-export default InteriorDesign;
+export default InteriorDesignOffice;

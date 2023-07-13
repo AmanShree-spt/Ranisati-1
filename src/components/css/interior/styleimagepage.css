@@ -250,27 +250,16 @@ padding-left: 50px;
 	margin:0;
 	padding-bottom: 10px;
 }
-.grid{
-	width:auto;
-	min-height:100px;
-	padding: 0px;
-	background-color: transparent;
-	margin-left: 12px;
-	font-size:12px;
-	float:left;
-	overflow: hidden;
-	-webkit-transition: top 1s ease, left 1s ease;
-	-moz-transition: top 1s ease, left 1s ease;
-	-o-transition: top 1s ease, left 1s ease;
-	-ms-transition: top 1s ease, left 1s ease;
+
+.imgholder .img {
+    width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.grid .imgholder img{
-	max-width:100%;
-	background:#ccc;
-	display:block;
-    width: 100%;
-}
+
+
 .zoom {
     cursor: pointer;
     transition: all .5s ease;

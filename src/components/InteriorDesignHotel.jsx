@@ -8,7 +8,7 @@ import './css/interior/animate.css';
 import './css/interior/styleimagepage.css';
 import classnames from 'classnames';
 
-function InteriorDesign() {
+function InteriorDesignHotel() {
 
   const [tag, setTag] = useState("home");
   const [selectedModalImage, setSelectedModalImage] = useState(null);
@@ -49,7 +49,7 @@ function InteriorDesign() {
     });
     return images;
   };
-  const images = importAll(require.context("/img/sample_photos/home", false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context("/img/sample_photos/hotel", false, /\.(png|jpe?g|svg)$/));
   return (
     <>
       <Navbar />
@@ -63,9 +63,9 @@ function InteriorDesign() {
           <div className="col-md-1"></div>
 
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat " onClick={() => { setTag("home") }}>
+            <a className="menuofcat " href='interior-design/'>
 
-              <span className="activecat">
+              <span>
                 <img src="/img/home_category.png" />
                 <br />
                 <p className="text-center">Home</p>
@@ -75,7 +75,7 @@ function InteriorDesign() {
           </div>
 
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat" onClick={() => { setTag("office") }}>
+            <a className="menuofcat" >
               <span className=" ">
                 <img src="/img/office_category.png" /><br />
                 <p className="text-center">Office</p>
@@ -83,7 +83,7 @@ function InteriorDesign() {
             </a>
           </div>
           <div className="col-md-2 col-sm-4 col-6" align="center">
-            <a className="menuofcat " onClick={() => { setTag("restaurant") }}>
+            <a className="menuofcat " href='/interior-design/restaurant' >
               <span className=" ">
                 <img src="/img/restaurant_category.png" /><br />
                 <p className="text-center">Restaurant</p>
@@ -100,7 +100,7 @@ function InteriorDesign() {
           </div>
           <div className="col-md-2 col-sm-4 col-6" align="center">
             <a className="menuofcat" onClick={() => { setTag("hotel") }}>
-              <span className=" ">
+              <span className="activecat">
                 <img src="/img/hotel_category.png" /><br />
                 <p className="text-center">Hotel</p>
               </span>
@@ -119,7 +119,7 @@ function InteriorDesign() {
             <div className="menuscrow swiper-slide">
               <a className="menuofcat " href="https://www.bluemasons.com/interior-designers/home">
 
-                <span className="activecat">
+                <span >
                   <img src="/img/home_category.png" /><br />
                   <p className>Home</p>
                 </span>
@@ -149,14 +149,14 @@ function InteriorDesign() {
               <a className="menuofcat" href="https://www.bluemasons.com/interior-designers/showroom">
                 <span className>
                   <img src="/img/showroom_category.png " /><br />
-                  <p>Showroom</p>
+                  <p>Others</p>
                 </span>
               </a>
             </div>
 
             <div className="menuscrow swiper-slide">
               <a className="menuofcat" href="https://www.bluemasons.com/interior-designers/hotel">
-                <span className>
+                <span className="activecat">
                   <img src="/img/hotel_category.png" /><br />
                   <p>Hotel</p>
                 </span>
@@ -272,4 +272,4 @@ function InteriorDesign() {
     </>
   );
 }
-export default InteriorDesign;
+export default InteriorDesignHotel;
