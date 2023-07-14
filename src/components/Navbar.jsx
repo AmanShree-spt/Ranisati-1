@@ -27,15 +27,15 @@ function Navbar() {
   return (
     <>
 
-      <nav className={`navbar navbar-light sticky-top notbigs ${isScrolled ? 'scrooling' : ''}   `}>
+      <nav style={{}} className={`navbar navbar-light sticky-top notbigs ${isScrolled ? 'scrooling' : ''}   `}>
         <button onClick={handleNavCollaped} className="navbar-toggler btn-expand-collapse navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span> <i><img className="SimpleLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>
           <span> <i><img className="ScrollLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>
         </button>
-        <a className="navbar-brand" href="#" style={{ marginLeft: '28px' }}>
+        <a className="navbar-brand" href="/" style={{ marginLeft: '28px' }}>
           {!isScrolled ?
-            <img href={'/'} className="SimpleLogo biglogo" src={"/img/Ranisati_logo.png"} height="40px;" alt="BlueMasons" /> :
-            <img href={'/'} className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} style={{ display: 'block' }} height="40px;" alt="BlueMasons" />}
+            <img href={'/'} className="SimpleLogo biglogo" src={"/img/Ranisati_logo.png"} height="40px;" alt="Ranisati" /> :
+            <img href={'/'} className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} style={{ display: 'block' }} height="40px;" alt="Ranisati" />}
         </a>
         <a className="pull-right opencontact" href="start-your-project">
           <span className="nav-label spl-blcak"> Get Started</span>
@@ -78,8 +78,8 @@ function Navbar() {
         <div className={` custom_nav ${isScrolled ? 'scrooling' : ''} `}>
           <div id="menu_items">
             <div className="logoimg">
-              <a className="navbar-brand" href={"http://ranisati.com"}>
-                {!isScrolled ? <img className="SimpleLogo " src={"/img/Ranisati_logo.png"} alt="BlueMasons" style={{ paddingLeft: '30px', marginTop: '-0px', height: '60px', display: 'block' }} /> : <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} alt="BlueMasons" height="50px" style={{ marginTop: '-14px', paddingLeft: '20px', display: 'block' }} />}
+              <a className="navbar-brand" href={"/"}>
+                {!isScrolled ? <img className="SimpleLogo " src={"/img/Ranisati_logo.png"} alt="Ranisati" style={{ paddingLeft: '30px', marginTop: '-0px', height: '60px', display: 'block' }} /> : <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} alt="Ranisati" height="50px" style={{ marginTop: '-14px', paddingLeft: '20px', display: 'block' }} />}
               </a>
             </div>
             <ul>
