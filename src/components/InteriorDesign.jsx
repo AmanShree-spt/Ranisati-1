@@ -49,7 +49,7 @@ function InteriorDesign() {
     });
     return images;
   };
-  const images = importAll(require.context("/img/sample_photos/home", false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context("../../public/img/sample_photos/home/", false, /\.(png|jpe?g|svg)$/));
   return (
     <>
       <Navbar />
