@@ -57,9 +57,6 @@ function Navbar() {
               <a href={"/interior-design/hotel"} className="subsec">
                 <img width="36px;" src={"/img/hotel_category.png"} alt="Hotel" /> &nbsp;&nbsp; Hotel
               </a>
-              <a href={"/interior-design/others"} className="subsec">
-                <img width="36px;" src={"/img/showroom_category.png"} alt="Showroom" /> &nbsp;&nbsp; Showroom
-              </a>
               <a href={"/interior-design/restaurant"} className="subsec">
                 <img width="36px;" src={"/img/restaurant_category.png"} alt="Restaurant" /> &nbsp;&nbsp; Restaurant
               </a>
@@ -68,6 +65,9 @@ function Navbar() {
               </a>
               <a href={"/interior-design/"} className="subsec">
                 <img width="36px;" src={'/img/home_category.png'} alt="Home" /> &nbsp;&nbsp; Home
+              </a>
+              <a href={"/interior-design/others"} className="subsec">
+                <img width="36px;" src={"/img/showroom_category.png"} alt="Others" /> &nbsp;&nbsp; Others
               </a>
             </ul>
           </li>
@@ -79,30 +79,30 @@ function Navbar() {
           <div id="menu_items">
             <div className="logoimg">
               <a className="navbar-brand" href={"/"}>
-                {!isScrolled ? <img className="SimpleLogo " src={"/img/Ranisati_logo.png"} alt="Ranisati" style={{ paddingLeft: '30px', marginTop: '-0px', height: '60px', display: 'block' }} /> : <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} alt="Ranisati" height="50px" style={{ marginTop: '-14px', paddingLeft: '20px', display: 'block' }} />}
+                {!isScrolled ? <img className="SimpleLogo " src={"/img/Ranisati_logo.png"} alt="Ranisati" style={{ paddingLeft: '30px', marginTop: '-15px', height: '55px', display: 'block' }} /> : <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} alt="Ranisati" height="50px" style={{ marginTop: '-14px', paddingLeft: '20px', display: 'block' }} />}
               </a>
             </div>
             <ul>
               <li className="notlist">
-                <a style={{ color: '#616161', fontWeight: '500' }} target="_blank" href={"/start-your-project"}>Get Started</a>
+                <a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px'}} target="_blank" href={"/start-your-project"}>Get Started</a>
               </li>
-              <li><a style={{ color: '#616161', fontWeight: '500' }} href={"/contact"}>Contact</a></li>
-              <li><a style={{ color: '#616161', fontWeight: '500' }} href={"/howitworks"}>How it works</a></li>
+              <li><a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
+              <li><a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px'}} href={"/howitworks"}>How it works</a></li>
               <li className="tootltypes">
-                <a style={{ color: '#616161', fontWeight: '500' }} href={"/interior-design"}>Our Design</a>
+                <a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px'}} href={"/interior-design"}>Our Design</a>
                 <ul className="row loca">
                   <h4 className="text-center"> Explore Our Designs </h4>
                   <li className="col-1"></li>
                   <li className="col-2">
-                    <a href={"/interior-design/hotel"}>
-                      <img className="dropimg" src={"/img/hotel_category.png"} alt="Hotel" /><br />
-                      <p style={{ border: 'none' }} >Hotel</p>
+                    <a href={"/interior-design/others"}>
+                      <img className="dropimg" src="/img/showroom_category.png" alt="others" /><br />
+                      <p style={{ border: 'none' }}>Others</p>
                     </a>
                   </li>
                   <li className="col-2">
-                    <a href={"/interior-design/others"}>
-                      <img className="dropimg" src="/img/showroom_category.png" alt="Showroom" /><br />
-                      <p style={{ border: 'none' }}>Others</p>
+                    <a href={"/interior-design/hotel"}>
+                      <img className="dropimg" src={"/img/hotel_category.png"} alt="Hotel" /><br />
+                      <p style={{ border: 'none' }} >Hotel</p>
                     </a>
                   </li>
                   <li className="col-2">
