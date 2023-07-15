@@ -36,22 +36,23 @@ function Contact() {
               <img className="hvr-float" src="/img/call-icon.png" />
               <p>CALL US</p>
               <p>+91-9800144511</p>
+              <p>+91-9932442966</p>
             </div>
             <div className="col-lg-4 col-md-4 col-12 text-center boxes">
-              <a className="down">
+              <a className="down" href="mailto:ranisati@gmail.com">
                 <img className="hvr-float" src="/img/email-icon.png" />
                 <p>WRITE TO US</p>
-                <p><span className="__cf_email__"
-                  data-cfemail="b9f0f7fff6f9fbf5ecfcf4f8eaf6f7ea97faf6f4">[email&#160;protected]</span>
-                </p>
-                <p>rsph@gmail.com
+                {/* <p><span className="__cf_email__"
+                  data-cfemail="b9f0f7fff6f9fbf5ecfcf4f8eaf6f7ea97faf6f4"></span>
+                </p> */}
+                <p>ranisati@gmail.com
                 </p>
               </a>
             </div>
             <div className="col-lg-4 col-md-4 col-12 text-center boxes">
-              <a href="https://my.artibot.ai/bluemasons" target="_blank">
+              <a href="https://wa.me/c/919800144511" target="_blank">
                 <img className="hvr-float" src="/img/chat-icon.png"
-                  alt="BlueMasons-chat" />
+                  alt="Ranisati-chat" />
                 <p>LIVE CHAT</p>
                 <p>WITH US</p>
               </a>

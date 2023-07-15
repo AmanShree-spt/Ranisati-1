@@ -61,7 +61,7 @@ function StartProject() {
           </div>
 
 
-          <form method="post" className="form" id="form" action="https://www.bluemasons.com/start-your-project">
+          <form method="post" className="form" id="form" action="/start-your-project">
             <input type="hidden" name="_token" value="7x7QaSkv06hR80tzWvi0sP2E06FxOhzcW9u533ZE" />
             <div id="section5" ref={myDivRef}>
               <h2 className="text-center">Help us know your design style better</h2>
@@ -88,7 +88,7 @@ function StartProject() {
                           <ul id="allimg" className="sdf" align="center">
                             {
                               <li>
-                                <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="https://www.bluemasons.com/assets/freequote/1.jpeg" />
+                                <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/freequote/1.jpeg" />
                               </li>
                             }
                           </ul>
