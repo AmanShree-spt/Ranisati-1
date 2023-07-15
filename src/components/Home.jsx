@@ -17,6 +17,9 @@ function Home() {
           <h1 style={{ color: '#fff', fontWeight: '300', paddingBottom: '100px' }} className="text-center maintexts">
             Interior Designer &amp; Decorators
           </h1>
+          <h1 style={{ color: '#fff', fontWeight: '300', paddingBottom: '100px' }} className="text-center maintexts">
+            Ranisati Ply & Hardware
+          </h1>
 
         </div>
         <div className="text-center">
