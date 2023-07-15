@@ -146,15 +146,6 @@ function InteriorDesignOthers() {
             </div>
 
             <div className="menuscrow swiper-slide">
-              <a className="menuofcat" href="/interior-design/others">
-                <span className="activecat">
-                  <img src="/img/others_category.png " /><br />
-                  <p>Others</p>
-                </span>
-              </a>
-            </div>
-
-            <div className="menuscrow swiper-slide">
               <a className="menuofcat" href="/interior-design/hotel">
                 <span className>
                   <img src="/img/hotel_category.png" /><br />
@@ -162,6 +153,16 @@ function InteriorDesignOthers() {
                 </span>
               </a>
             </div>
+
+            <div className="menuscrow swiper-slide">
+              <a className="menuofcat" href="/interior-design/others">
+                <span className="activecat">
+                  <img src="/img/others_category.png " /><br />
+                  <p>Others</p>
+                </span>
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
