@@ -6,32 +6,29 @@ function StartProject() {
 
   const myDivRef = useRef(null);
   const myDivRef2 = useRef(null);
+  const [selection, setSelection] = useState(null);
 
   const scrollDown = () => {
-    myDivRef.current.scrollIntoView({ behavior: 'smooth' });
+    const isMobile = window.innerWidth <= 768;
+    const scrollStep = 20; // Adjust the value as needed
+
+    const scrollAmount = isMobile ? 800 : 650; // Adjust the value as needed
+    let scrolled = 0;
+    const scroll = () => {
+      if (scrolled < scrollAmount) {
+        window.scrollBy(0, scrollStep);
+        scrolled += scrollStep;
+        requestAnimationFrame(scroll);
+      }
+    };
+
+    requestAnimationFrame(scroll);
   }
-  /*  const scrollDown2 = () => {
-      myDivRef2.current.scrollIntoView({ behavior: 'smooth' });
-    }
-    const scrollDown3 = () => {
-      myDivRef3.current.scrollIntoView({ behavior: 'smooth' });
-    }
-    const scrollDown4 = () => {
-      myDivRef4.current.scrollIntoView({ behavior: 'smooth' });
-    }
-    const scrollDown5 = () => {
-      myDivRef5.current.scrollIntoView({ behavior: 'smooth' });
-    }
-    const scrollDown6 = () => {
-      myDivRef6.current.scrollIntoView({ behavior: 'smooth' });
-    }
-    const scrollDown7 = () => {
-      myDivRef7.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  */
 
 
-
+  const handleOptionChange = (event) => {
+    setSelection(event.target.value)
+  }
 
 
 
@@ -75,7 +72,7 @@ function StartProject() {
                       <div className="col-2">
 
                         <div className="pull-right fivethprogress nextme tabview notmobile stop dislikess" style={{ marginTop: '100%' }}>
-                          <i style={{ marginLeft: '-150px' }} className="fa fa-thumbs-down fa-5x"></i> <br />
+                          <i onClick={scrollDown} style={{ marginLeft: '-150px' }} className="fa fa-thumbs-down fa-5x"></i> <br />
                           <span style={{ marginLeft: '-148px', fontWeight: '500', fontSize: '20px' }}>Dislike</span>
                         </div>
                       </div>
@@ -85,13 +82,14 @@ function StartProject() {
                           <div align="center" className="number text-center">
                             <a style={{ color: '#616161' }} className="MyButtons"></a>
                           </div>
-                          <ul id="allimg" className="sdf" align="center">
-                            {
-                              <li>
-                                <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/freequote/1.jpeg" />
-                              </li>
-                            }
-                          </ul>
+                          <div className="scroll-container">
+                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/home/restaurant13.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/home/restaurant5.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/hotel/restaurant3.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/office/restaurant3.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/others/restaurant7.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/office/restaurant13.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                          </div>
                           <div align="center" className="skipable notmobile">
                             <p className="text-center">I've seen enough</p>
                           </div>
@@ -101,7 +99,7 @@ function StartProject() {
                       <div className="col-2">
 
                         <div className="pull-left fivethprogress clickme tabview notmobile  likess" style={{ marginTop: '100%' }}>
-                          <i style={{ marginLeft: '90px' }} className="fa fa-thumbs-up fa-5x"></i>
+                          <i onClick={scrollDown} style={{ marginLeft: '90px' }} className="fa fa-thumbs-up fa-5x"></i>
                           <br />
                           <span style={{ marginLeft: '97px', fontWeight: '500', fontSize: '20px' }}>Like</span>
                         </div>
@@ -118,11 +116,11 @@ function StartProject() {
                       </div>
                       <div className="col-12" style={{ marginTop: '-20px' }}>
                         <div className="pull-left fivethprogress nextme  dislikess">
-                          <i style={{ paddingLeft: '90px' }} className="fa fa-thumbs-down fa-3x"></i><br />
+                          <i onClick={scrollDown} style={{ paddingLeft: '90px' }} className="fa fa-thumbs-down fa-3x"></i><br />
                           <span style={{ paddingLeft: '80px' }}>Dislike</span>
                         </div>
                         <div className="pull-right fivethprogress clickme likess">
-                          <i style={{ marginLeft: '-130px' }} className="fa fa-thumbs-up fa-3x"></i>
+                          <i onClick={scrollDown} style={{ marginLeft: '-130px' }} className="fa fa-thumbs-up fa-3x"></i>
                           <br />
                           <span style={{ marginLeft: '-130px' }}>Like</span>
                         </div >
@@ -154,8 +152,8 @@ function StartProject() {
 
               <div className="row justify-content-center" align="center">
                 <div className="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-5 col-8">
-                  <a className="sec2 firstprogress">
-                    <input className="check-with-label" id="designer" type="radio" name="firstradio" value="Interior Designer" required />
+                  <a className="sec2 firstprogress" >
+                    <input className="check-with-label" onClick={scrollDown} id="designer" type="radio" name="firstradio" value="Interior Designer" required />
                     <label className="myradio" for="designer">
                       <p>Interior Designer</p>
                     </label>
@@ -163,7 +161,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-5 col-sm-5 col-8">
                   <a className="sec2 firstprogress">
-                    <input className="check-with-label" type="radio" id="architect" name="firstradio" value="Architect" required />
+                    <input className="check-with-label" type="radio" onClick={scrollDown} id="architect" name="firstradio" value="Architect" required />
                     <label className="myradio" for="architect">
                       <p>Architect</p>
                     </label>
@@ -182,7 +180,7 @@ function StartProject() {
               <div className="row">
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <a className="sec3 secprogress">
-                    <input className="check-with-label" type="radio" id="home" name="sectradio" value="Home" disabled />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="home" name="sectradio" value="Home" />
                     <label className="myradio" for="home">
                       <p>Home</p>
                     </label>
@@ -190,7 +188,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <a className="sec3 secprogress">
-                    <input className="check-with-label" type="radio" id="office" name="sectradio" value="Office" disabled />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="office" name="sectradio" value="Office" />
                     <label className="myradio" for="office">
                       <p>Office</p>
                     </label>
@@ -198,7 +196,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <a className="sec3 secprogress">
-                    <input className="check-with-label" type="radio" id="hotel" name="sectradio" value="Hotel" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="hotel" name="sectradio" value="Hotel" required />
                     <label className="myradio" for="hotel">
                       <p>Hotel</p>
                     </label>
@@ -206,7 +204,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <a className="sec3 secprogress">
-                    <input className="check-with-label" type="radio" id="showroom" name="sectradio" value="Showroom" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="showroom" name="sectradio" value="Showroom" required />
                     <label className="myradio" for="showroom">
                       <p>Showroom</p>
                     </label>
@@ -214,7 +212,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <a className="sec3 secprogress">
-                    <input className="check-with-label" type="radio" id="restaurant" name="sectradio" value="Restaurant" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="restaurant" name="sectradio" value="Restaurant" required />
                     <label className="myradio" for="restaurant">
                       <p>Restaurant</p>
                     </label>
@@ -222,7 +220,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <a className="sec3 secprogress">
-                    <input className="check-with-label" type="radio" id="shop" name="sectradio" value="Shop" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="shop" name="sectradio" value="Shop" required />
                     <label className="myradio" for="shop">
                       <p>Shop</p>
                     </label>
@@ -240,7 +238,7 @@ function StartProject() {
               <div className="row justify-content-center" align="center">
                 <div className="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-6 col-10">
                   <a className="sec4 thirdprogress">
-                    <input className="check-with-label" type="radio" id="500sqft" name="thirdtradio" value="500 sq ft" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="500sqft" name="thirdtradio" value="500 sq ft" required />
                     <label className="myradio" for="500sqft">
                       <p>500 - 1000 Sqft</p>
                     </label>
@@ -248,7 +246,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-5 col-sm-6 col-10">
                   <a className="sec4 thirdprogress">
-                    <input className="check-with-label" type="radio" id="1000sqft" name="thirdtradio" value="1500-1000 sq ft" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="1000sqft" name="thirdtradio" value="1500-1000 sq ft" required />
                     <label className="myradio" for="1000sqft">
                       <p>1000 - 1500 Sqft</p>
                     </label>
@@ -258,7 +256,7 @@ function StartProject() {
 
                 <div className="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-6 col-10">
                   <a className="sec4 thirdprogress">
-                    <input className="check-with-label" type="radio" id="3000sqft" name="thirdtradio" value="1000 - 3000 sq ft" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="3000sqft" name="thirdtradio" value="1000 - 3000 sq ft" required />
                     <label className="myradio" for="3000sqft">
                       <p>1500 - 2000 Sqft</p>
                     </label>
@@ -266,7 +264,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 offset-lg-0 col-md-5 col-sm-6 col-10">
                   <a className="sec4 thirdprogress">
-                    <input className="check-with-label" type="radio" id="more3000sqft" name="thirdtradio" value="More than 3000 sq ft" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="more3000sqft" name="thirdtradio" value="More than 3000 sq ft" required />
                     <label className="myradio" for="more3000sqft">
                       <p>More than 2000 Sqft</p>
                     </label>
@@ -285,7 +283,7 @@ function StartProject() {
               <div className="row justify-content-center" align="center">
                 <div className="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-6 col-10">
                   <a className="sec5 fourthprogress">
-                    <input className="check-with-label" type="radio" id="lacs" name="fourthradio" value="Upto 10 lacs" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="lacs" name="fourthradio" value="Upto 10 lacs" required />
                     <label className="myradio" for="lacs">
                       <p>Upto Rs 15 lakhs</p>
                     </label>
@@ -293,7 +291,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-5 col-sm-6 col-10">
                   <a className="sec5 fourthprogress">
-                    <input className="check-with-label" type="radio" id="10lacs" name="fourthradio" value="10-25 lacs" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="10lacs" name="fourthradio" value="10-25 lacs" required />
                     <label className="myradio" for="10lacs">
                       <p>15 lakhs - 30 lakhs</p>
                     </label>
@@ -302,7 +300,7 @@ function StartProject() {
                 <div className="col-2 notmobile"></div>
                 <div className="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-6 col-10">
                   <a className="sec5 fourthprogress">
-                    <input className="check-with-label" type="radio" id="25lacs" name="fourthradio" value="25-50 lacs" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="25lacs" name="fourthradio" value="25-50 lacs" required />
                     <label className="myradio" for="25lacs">
                       <p>30 lakhs - 50 lakhs</p>
                     </label>
@@ -310,7 +308,7 @@ function StartProject() {
                 </div>
                 <div className="col-lg-4 col-md-5 col-sm-6 col-10">
                   <a className="sec5 fourthprogress">
-                    <input className="check-with-label" type="radio" id="50lacs" name="fourthradio" value="More than 50 lacs" disabled required />
+                    <input onClick={scrollDown} className="check-with-label" type="radio" id="50lacs" name="fourthradio" value="More than 50 lacs" required />
                     <label className="myradio" for="50lacs">
                       <p>More than 50 lakhs</p>
                     </label>
@@ -331,32 +329,32 @@ function StartProject() {
 
                   <div className="input-group">
                     <span className="input-group-addon first">Name </span>
-                    <input type="text" className="form-control" id="names" aria-describedby="basic-addon3" value name="name" required />
+                    <input type="text" className="form-control" id="names" aria-describedby="basic-addon3" name="name" required />
                   </div><br />
 
                   <div className="input-group">
                     <span className="input-group-addon secfirst">Mobile </span>
-                    <input type="number" className="form-control" id="mobile" aria-describedby="basic-addon3" value name="mobile" minlength="10" required />
+                    <input type="number" className="form-control" id="mobile" aria-describedby="basic-addon3" name="mobile" minlength="10" required />
                   </div><br />
 
                   <div className="input-group">
                     <span className="input-group-addon seclast">E-mail ID </span>
-                    <input type="email" className="form-control" aria-describedby="basic-addon3" name="email" id="email" value required />
+                    <input type="email" className="form-control" aria-describedby="basic-addon3" name="email" id="email" required />
                   </div><br />
 
                   <div className="input-group">
                     <span className="input-group-addon last">City </span>
-                    <input type="text" className="form-control" aria-describedby="basic-addon3" name="city" id="city" value required />
+                    <input type="text" className="form-control" aria-describedby="basic-addon3" name="city" id="city" required />
                   </div><br />
                   <div className="input-group">
                     <span className="input-group-addon last">Pincode </span>
-                    <input type="text" className="form-control" aria-describedby="basic-addon3" name="pincode" id="pincode" minlength="6" value required />
+                    <input type="text" className="form-control" aria-describedby="basic-addon3" name="pincode" id="pincode" minlength="6" required />
                   </div><br />
                   <div className="row justify-content-center">
                     <div className="col-4 mobileview"></div>
 
                     <div className="col-lg-4 col-md-4 col-sm-4 col-5" align="center">
-                      <input type="submit" className="customkey sixththprogress" name="submit" value="Submit" id="submit" />
+                      <input type="button" onClick={() => { alert('sent') }} className="customkey sixththprogress" name="submit" id="submit" value="Query" />
                     </div>
                     <div className="col-4 mobileview"></div>
                   </div>
