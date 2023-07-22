@@ -1256,7 +1256,14 @@ function Home() {
       </div>
 
 
-
+      <div style={{ background: '#5e2f10'}}>
+        <br />
+        
+        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d17531.719193821427!2d86.97139992015657!3d23.690199301746617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sranisati%20ply%20%26%20hardware!5e0!3m2!1sen!2sin!4v1690038618495!5m2!1sen!2sin" width="70%" height="350" style={{ border: '0', display: 'block', margin: 'auto'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29228.521747543422!2d86.96807515220941!3d23.691501607915683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sranisati%20ply%20%26%20hardware!5e0!3m2!1sen!2sin!4v1690039378439!5m2!1sen!2sin" width="70%" height="350" style={{ border: '0', display: 'block', margin: 'auto'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        {/* <br /> */}
+        <hr />
+      </div>
 
       <Footer />
     </>
