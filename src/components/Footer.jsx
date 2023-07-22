@@ -170,6 +170,7 @@ function Footer() {
             </div>
           </div>
         </div>
+        <p style={{ fontSize: '15px', color:'black', backgroundColor:'white', marginTop: '2px', marginBottom: '0px', paddingTop: '5px', paddingBottom: '5px', display: 'block', textAlign: 'center', fontWeight: 'bold' }}>Designed by SmallTownTalks</p>
       </div>
     </>
   );
