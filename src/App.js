@@ -8,6 +8,8 @@ import InteriorDesignRest from './components/InteriorDesignRest.jsx';
 import InteriorDesignOthers from './components/InteriorDesignOthers.jsx';
 import StartProject from './components/StartProject.jsx';
 import Home from './components/Home.jsx';
+import About from './components/About.jsx';
+import Products from './components/Products.jsx';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/howitworks" element={<HowItWorks />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/aboutus" element={<About />} />
+
+      <Route path="/products" element={<Products />} />
       <Route path="/start-your-project" element={<StartProject />} />
       <Route path="/interior-design/" element={<InteriorDesign />} />
       <Route path="/interior-design/hotel" element={<InteriorDesignHotel />} />

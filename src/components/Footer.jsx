@@ -159,18 +159,18 @@ function Footer() {
             <div className="row">
               <div className="col-sm-6 col-12">
                 <div className="pull-left">
-                  <p>Address:  45/46, G. T. Road- East, Beside Icici Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</p>
+                  <p style={{ color: 'black' }}>Address:  45/46, G. T. Road- East, Beside Icici Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</p>
                 </div>
               </div>
               <div className="col-sm-6 col-12">
                 <div className="pull-right">
-                  <p>Copyright © 2023. Ranisati Ply & Hardware. All Rights Reserved</p>
+                  <p style={{ color: 'black' }}>Copyright © 2023. Ranisati Ply & Hardware. All Rights Reserved</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <p style={{ fontSize: '15px', color:'black', backgroundColor:'white', marginTop: '2px', marginBottom: '0px', paddingTop: '5px', paddingBottom: '5px', display: 'block', textAlign: 'center', fontWeight: 'bold' }}>Designed by SmallTownTalks</p>
+        <p style={{ fontSize: '15px', color: 'black', backgroundColor: 'white', marginTop: '2px', marginBottom: '0px', paddingTop: '5px', paddingBottom: '5px', display: 'block', textAlign: 'center', fontWeight: 'bold' }}>Designed by SmallTownTalks</p>
       </div>
     </>
   );

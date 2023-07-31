@@ -25,6 +25,18 @@ html {
 {
     color:#69c;
 }
+ .headon {
+        color: #fff;
+        font-weight: 700;
+        font-size: 7rem;
+        padding-bottom: 100px;
+
+    }
+@media screen and (max-width:'768px') {
+    .headon {
+        font-size:2rem;
+    }
+}
 
 .BlogHeading,
 .BlogHeading h2
@@ -285,7 +297,7 @@ span {
 }
 
 #sectiontop {
-    background-image: url(../../../public/img/banner2.jpg);
+    background-image: url(../../../public/img/banner3.jpg);
     height: 100vh;
     width: auto;
     background-size: 100% 100%
@@ -465,7 +477,6 @@ span {
 }
 #sectiontop h1{
     padding-bottom: 185px !important;
-    font-size: 35px;
 }
 #sectiontop h3>.space {
     line-height: 80px
@@ -1047,7 +1058,7 @@ span {
         overflow-x: hidden
     }
     #sectiontop {
-        background-image: url(../../../public/img/banner2.jpg);
+        background-image: url(../../../public/img/banner3.jpg);
         height: 100vh;
         width: auto;
         background-size:cover;
@@ -1424,7 +1435,7 @@ span {
         background-color: transparent
     }
     #sectiontop {
-        background-image: url(../../../public/img/banner2.jpg);
+        background-image: url(../../../public/img/banner3.jpg);
         height: 100vh;
         width: auto;
         background-size: 100% 100%
@@ -1779,9 +1790,9 @@ span {
     .tag_buttons a {
         background-color: transparent
     }
-    #sectiontop {
+       #sectiontop {
         position: absolute;
-        background-image: url(../../../public/img/banner2.jpg);
+        background-image: url(../../../public/img/banner3.jpg);
         height: 100vh;
         width: auto;
         background-size:cover; 

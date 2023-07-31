@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+body{
+    font-family: 'Montserrat';
+}
+
+.heading {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.cards {
+    padding-bottom: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ecard {
+    margin-top: 2rem;
+    width: 31%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.ecard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transform: scale(1.05);
+}
+
+.ecard img {
+    display: block;
+    padding-top: 5px;
+    margin: auto;
+}
+
+.container h3 {
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+
+}
+.container p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Barlow', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    line-height: 22px;
+}
+
+@media screen and (max-width: 600px) {
+    .ecard {
+    margin-top: 2rem;
+    width: 96%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    }
+
+    .ecard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .ecard {
+    margin-top: 2rem;
+    width: 46%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    }
+
+    .ecard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .ecard {
+    margin-top: 2rem;
+    width: 23.5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    }
+
+    .ecard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transform: scale(1.05);
+    }
+}

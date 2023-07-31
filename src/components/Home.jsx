@@ -3,7 +3,48 @@ import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import './css/stylehome.css';
 
+import { useRef, useState, useEffect } from 'react';
+import './css/stylehome2.css';
 function Home() {
+
+  const containerRef = useRef(null);
+  const brandRef = useRef(null);
+  const scrollLeft = () => {
+    containerRef.current.scrollBy({
+      left: -500,
+      behavior: 'smooth'
+    });
+  };
+  const scrollRight = () => {
+    containerRef.current.scrollBy({
+      left: 500,
+      behavior: 'smooth'
+    });
+  };
+  const scrollLeft1 = () => {
+    brandRef.current.scrollBy({
+      left: -500,
+      behavior: 'smooth'
+    });
+  };
+  const scrollRight1 = () => {
+    brandRef.current.scrollBy({
+      left: 500,
+      behavior: 'smooth'
+    });
+  };
+  const importAll = (r) => {
+    const images = {};
+    r.keys().forEach((key) => {
+      images[key] = r(key);
+    });
+    return images;
+  };
+
+  const images = importAll(require.context("../../public/img/sample_photos/others", false, /\.(png|jpe?g|svg)$/));
+  const images_brand = importAll(require.context("../../public/img/brands", false, /\.(png|jpe?g|svg)$/));
+
+
   return (
     <>
       <Navbar />
@@ -14,11 +55,8 @@ function Home() {
               <span className="typed"></span>
             </div>
           </h3>
-          <h1 style={{ color: '#fff', fontWeight: '300', paddingBottom: '100px' }} className="text-center maintexts">
-            Interior Designer &amp; Decorators
-          </h1>
-          <h1 style={{ color: '#fff', fontWeight: '300', paddingBottom: '100px' }} className="text-center maintexts">
-            Ranisati Ply & Hardware
+          <h1 className="text-center maintexts headon">
+            <span style={{ color: 'red' }}>Ranisati</span> Ply & Hardware
           </h1>
 
         </div>
@@ -35,9 +73,28 @@ function Home() {
         </a>
         <div className="linklink"></div>
       </div>
+
+
+      <div className="cover" >
+
+        <div className="horScroll" ref={containerRef}>
+          {Object.keys(images).map((key) => (
+            <img src={images[key]} />
+          ))}
+        </div>
+
+        <button className="left" onClick={scrollLeft}>&lt;&lt;</button>
+        <button className="right" onClick={scrollRight}>&gt;&gt;</button>
+      </div>
+
+
+      <div className="chat-popup" id="myForm">
+        <a href="tel:+919933332263"><img src="../../img/phone-call.png" style={{ height: '4rem', width: '4rem' }} /></a>
+      </div>
+
       <div id="sectionresi" className="first-spacing-home">
-        <a target="_blank" href="/interior-design/" className="text-left">
-          <h2>Home <span>Design</span></h2>
+        <a target="_blank" href="/interior-design/" className="text-left" style={{ backgroundColor: '' }}>
+          <h2><strong>Our Products Used In</strong></h2>
         </a>
         <p className="verybig"> Home</p>
         <div className="container-fluid">
@@ -918,18 +975,6 @@ function Home() {
       </div>
 
 
-      <div className="container-fluid" id="big__quote">
-        <div className="row">
-          <div className="col-12 text-center">
-            <img className="img-fluid mx-auto d-block icoconimg"
-              src="../../img/restromenu.png" />
-            <h2 className="super__big">GOOD FOOD, GOOD PEOPLE,<br /> GOOD <b><a target="_blank" className="linkoflink"
-              href="/start-your-project">INTERIORS</a></b>, GOOD MEMORIES.
-            </h2>
-
-          </div>
-        </div>
-      </div>
 
 
 
@@ -937,8 +982,8 @@ function Home() {
 
 
       <div id="sectionresi">
-        <a href="/interior-design/office">
-          <h2>Office <span>Design</span></h2>
+        <a href="">
+          <h2 style={{ fontSize: '3rem' }}>Our Showroom</h2>
         </a>
         <p className="verybigtwo">
           Office
@@ -946,35 +991,35 @@ function Home() {
         <div className="container-fluid">
           <div className="row no-gutters">
 
-            <div className="col-sm-3 col-6">
+            <div className="col-sm-6 col-12">
               <a className="ofgrid" data-toggle="modal" href="#officel">
                 <img alt="Office cabin with round table, chairs, carpet flooring, blinds and an amazing view"
                   className="imggrids1"
-                  src="../../img/sample_photos/office/restaurant7.jpg"
+                  src="../../img/showroom/IMG_8744.JPG"
                   width="100%;" />
               </a>
             </div>
-            <div className="col-sm-3 col-6">
+            <div className="col-sm-6 col-12">
               <a className="ofgrid" data-toggle="modal" href="#officel">
                 <img alt="Premium office reception and waiting area interior with use of Italian marble"
                   className="imggrids1"
-                  src="../../img/sample_photos/office/restaurant10.jpg"
+                  src="../../img/showroom/IMG_8746.JPG"
                   width="100%;" />
               </a>
             </div>
-            <div className="col-sm-3 col-6">
+            <div className="col-sm-6 col-12">
               <a className="ofgrid" data-toggle="modal" href="#officel">
                 <img alt="Corner office interior design with amazing view perfect for the company CEO"
                   className="imggrids1"
-                  src="../../img/sample_photos/office/restaurant13.jpg"
+                  src="../../img/showroom/IMG_8756.JPG"
                   width="100%;" />
               </a>
             </div>
-            <div className="col-sm-3 col-6">
+            <div className="col-sm-6 col-12">
               <a className="ofgrid" data-toggle="modal" href="#officel">
                 <img alt="Office conference room interior design with table and chairs for meetings"
                   className="imggrids1"
-                  src="../../img/sample_photos/office/restaurant9.jpg"
+                  src="../../img/showroom/IMG_8751.JPG"
                   width="100%;" />
               </a>
             </div>
@@ -983,7 +1028,7 @@ function Home() {
               <a className="ofgrid" data-toggle="modal" href="#officel">
                 <img alt="Modern industrial interior design look office work place with open ceiling, colourful furniture and work stations"
                   className="imggrids1"
-                  src="../../img/sample_photos/office/restaurant12.jpg"
+                  src="../../img/showroom/IMG_8760.JPG"
                   width="100%;" />
               </a>
             </div>
@@ -991,7 +1036,7 @@ function Home() {
               <a className="ofgrid" data-toggle="modal" href="#officel">
                 <img alt="Commercial reception and waiting area design for multi-storied work place"
                   className="imggrids1"
-                  src="../../img/sample_photos/office/restaurant17.jpg"
+                  src="../../img/showroom/IMG_8753.JPG"
                   width="100%;" />
               </a>
             </div>
@@ -1230,37 +1275,39 @@ function Home() {
 
       </div>
 
+      <div className="servicesPr">
+        <div className="col-12 col-lg-12" align="center">
 
-      <div className="container last" id="lastText">
-        <h2 className="text-center">
-          <a target="_blank" href="/interior-design/office">
-            Explore Our Designs
-            <i style={{ marginTop: '1.5px', marginLeft: '4px' }} className="fa fa-caret-right"></i>
-          </a>
-        </h2>
-      </div>
-
-
-
-      <div className="container-fluid" id="big__quote">
-        <div className="row">
-          <div className="col-12 text-center">
-            <img className="img-fluid mx-auto d-block icoconimg"
-              src="../../img/officemenu.png" />
-            <h2 className="super__big">OFFICE [aw-fis] noun:<br /> A place to <b><a target="_blank" className="linkoflink"
-              href="/start-your-project">relax</a></b> after a<br /> stressful
-              night at home.
-            </h2>
-          </div>
+          <h2 className="text-center" style={{ fontSize: '3rem' }}>
+            Services
+          </h2>
         </div>
+
+        <img src="/img/Services.jpg" style={{ height: '20%', width: '100%', boxShadow: '5px 5px 5px ' }} />
+      </div>
+
+      <div className="cover" >
+        <div style={{ textAlign: 'center' }}>
+          <p>
+            <h2 style={{ fontSize: '3rem' }}>Our Brands</h2>
+          </p>
+        </div>
+        <div className="horScroll" ref={brandRef}>
+          {Object.keys(images_brand).map((key) => (
+            <img src={images_brand[key]} />
+          ))}
+        </div>
+
+        <button className="left" onClick={scrollLeft1}>&lt;&lt;</button>
+        <button className="right" onClick={scrollRight1}>&gt;&gt;</button>
       </div>
 
 
-      <div style={{ background: '#5e2f10'}}>
+      <div style={{ background: '#201A1E' }}>
         <br />
-        
+
         {/* <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d17531.719193821427!2d86.97139992015657!3d23.690199301746617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sranisati%20ply%20%26%20hardware!5e0!3m2!1sen!2sin!4v1690038618495!5m2!1sen!2sin" width="70%" height="350" style={{ border: '0', display: 'block', margin: 'auto'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29228.521747543422!2d86.96807515220941!3d23.691501607915683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sranisati%20ply%20%26%20hardware!5e0!3m2!1sen!2sin!4v1690039378439!5m2!1sen!2sin" width="70%" height="350" style={{ border: '0', display: 'block', margin: 'auto'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29228.521747543422!2d86.96807515220941!3d23.691501607915683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sranisati%20ply%20%26%20hardware!5e0!3m2!1sen!2sin!4v1690039378439!5m2!1sen!2sin" width="90%" height="450" style={{ border: '0', display: 'block', margin: 'auto' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         {/* <br /> */}
         <hr />
       </div>

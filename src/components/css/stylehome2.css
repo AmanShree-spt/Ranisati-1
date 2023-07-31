@@ -1,0 +1,68 @@
+.cover {
+    padding: 0px 0px;
+    position: relative;
+    width:auto;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  .right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.horScroll {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: grey;
+    scroll-behavior: smooth;
+}
+.servicesPr {
+    padding: 6rem;
+}
+.horScroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+ }
+
+.left,.right {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 40px;
+    height: 7rem;
+    transition: 0.2s;
+}
+
+.left:hover ,.right:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+}
+
+.horScroll img {
+    height: 15rem;
+    border-radius: 1.5rem;
+    /* border-style: double; */
+    padding: 10px;
+}
+@media screen and (max-width:768px) {
+    .servicesPr{
+        padding: 0.7rem;
+    }
+}
+.chat-popup {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  bottom: 20px;
+  z-index: 9;
+}

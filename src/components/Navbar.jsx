@@ -37,9 +37,11 @@ function Navbar() {
             <img href={'/'} className="SimpleLogo biglogo" src={"/img/Ranisati_logo.png"} height="40px;" alt="Ranisati" /> :
             <img href={'/'} className="ScrollLogo smallimg" src={"/img/Ranisati_logo_small.png"} style={{ display: 'block' }} height="40px;" alt="Ranisati" />}
         </a>
+
         <a className="pull-right opencontact" href="start-your-project">
           <span className="nav-label spl-blcak"> Get Started</span>
         </a>
+
       </nav>
       <nav className={`navbar-primary notbigs ${isCollapsed ? 'collapsed' : ''}`} style={{ zIndex: '120' }} >
         <ul className="navbar-primary-menu">
@@ -48,7 +50,11 @@ function Navbar() {
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
             <a href="/howitworks"><span className="nav-label"> How it Works</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
+            <a href="/aboutus"><span className="nav-label">About us</span></a>
+            <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
 
+            <a href="/products"><span className="nav-label">Products</span></a>
+            <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
             <a href="/interior-design">
               <span className="nav-label"> Our Designs</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-18px' }}>
@@ -84,12 +90,15 @@ function Navbar() {
             </div>
             <ul>
               <li className="notlist">
-                <a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px'}} target="_blank" href={"/start-your-project"}>Get Started</a>
+                <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} target="_blank" href={"/start-your-project"}>Get Started</a>
               </li>
-              <li><a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
-              <li><a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px'}} href={"/howitworks"}>How it works</a></li>
+              <li><a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
+              <li><a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/howitworks"}>How it works</a></li>
+              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/aboutus"}>About us</a>             </li>
+
+              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/products"}>Products</a>             </li>
               <li className="tootltypes">
-                <a style={{ color: '#616161', fontWeight: '500' , marginTop: '-5px'}} href={"/interior-design"}>Our Design</a>
+                <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/interior-design"}>Our Design</a>
                 <ul className="row loca">
                   <h4 className="text-center"> Explore Our Designs </h4>
                   <li className="col-1"></li>
