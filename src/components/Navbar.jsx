@@ -46,17 +46,21 @@ function Navbar() {
       <nav className={`navbar-primary notbigs ${isCollapsed ? 'collapsed' : ''}`} style={{ zIndex: '120' }} >
         <ul className="navbar-primary-menu">
           <li>
-            <a href="/contact"><span className="nav-label"> Contact</span></a>
-            <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
-            <a href="/howitworks"><span className="nav-label"> How it Works</span></a>
-            <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
             <a href="/aboutus"><span className="nav-label">About us</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
-
             <a href="/products"><span className="nav-label">Products</span></a>
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
             <a href="/interior-design">
               <span className="nav-label"> Our Designs</span></a>
+
+
+
+            <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
+            <a href="/howitworks"><span className="nav-label"> How it Works</span></a>
+
+            <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-17px' }}></span>
+            <a href="/contact"><span className="nav-label">Contact</span></a>
+
             <span style={{ position: 'absolute', width: '42px', height: '1px', backgroundColor: '#616161', marginLeft: '15px', marginTop: '-18px' }}>
             </span>
             <ul className="collpsemenusub">
@@ -76,6 +80,7 @@ function Navbar() {
                 <img width="36px;" src={"/img/showroom_category.png"} alt="Others" /> &nbsp;&nbsp; Others
               </a>
             </ul>
+            <a href="/contact"><span className="nav-label"> Contact</span></a>
           </li>
         </ul>
       </nav>

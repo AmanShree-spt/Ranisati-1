@@ -41,14 +41,38 @@ function Home() {
     return images;
   };
 
+  const [currentImageKey, setCurrentImageKey] = useState('./restaurant1.jpg');
+
+
   const images = importAll(require.context("../../public/img/sample_photos/others", false, /\.(png|jpe?g|svg)$/));
+  console.log(images)
   const images_brand = importAll(require.context("../../public/img/brands", false, /\.(png|jpe?g|svg)$/));
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const imageKeys = Object.keys(images);
+      const currentIndex = imageKeys.indexOf(currentImageKey);
+      const nextIndex = (currentIndex + 1) % imageKeys.length;
+      setCurrentImageKey(imageKeys[nextIndex]);
+    }, 6000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentImageKey]);
+
+
 
 
   return (
     <>
       <Navbar />
-      <div id='sectiontop' style={{}}>
+      <div id='sectiontop' style={{
+        backgroundImage: `url(${images[currentImageKey]})`,
+        backgroundSize: 'cover',
+        transition: 'background-image 3s ease-in-out',
+      }}>
         <div className="text-center newly">
           <h3 className style={{ paddingBottom: '10px !important', fontWeight: '300' }}>
             <div className="typed_wrap">
