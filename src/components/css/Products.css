@@ -28,6 +28,7 @@ body{
 .ecard {
     margin-top: 2rem;
     width: 31%;
+    /* height: 45%; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: transform 0.2s;
 }
@@ -37,29 +38,33 @@ body{
     transform: scale(1.05);
 }
 
-.ecard img {
+.image_cont img {
     display: block;
     padding-top: 5px;
     margin: auto;
+    width: 95%;
+    aspect-ratio: 4/3;
+    object-fit: cover; /* other possible values- fill and cover and contain */
+}
+
+.container {
+    text-align: center;
 }
 
 .container h3 {
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 5px;
-
 }
-.container p {
+
+/* .container p {
     margin-top: 5px;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
-    /* font-family: 'Roboto Slab', serif; */
-    /* font-family: 'Barlow', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
     line-height: 22px;
-}
+} */
 
 @media screen and (max-width: 600px) {
     .ecard {
@@ -102,3 +107,4 @@ body{
     transform: scale(1.05);
     }
 }
+

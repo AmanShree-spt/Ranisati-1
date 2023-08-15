@@ -1,0 +1,7 @@
+The file was blocked since it contained data that is not allowed to be downloaded.
+----------------------------------------------------------------------------------
+Original file name: *~hmac=15ab01565f0e90ab9915ff96aa79c2530860fc5f00973571fc26ed3124fe5b7b.pdf
+Original file size in bytes: 1347627
+Original file sha256 checksum: 627a66c905036496a4a4a52c25e90af63e89797a25048d7858b18ccffcf06704
+----------------------------------------------------------------------------------
+Download blocked by MCAS due to Microsoft Information Protection unsupported file or file format.

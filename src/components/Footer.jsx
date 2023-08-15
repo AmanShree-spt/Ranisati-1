@@ -101,7 +101,7 @@ function Footer() {
                         <small className>Call us anytime</small>
                       </div>
                       <div className="col-12 footer-rev-details">
-                        <a href="tel:+919800144511">+91-9800144511</a>
+                        <a href="tel:+919933332263">+91-9933332263</a>
                       </div>
                     </div>
                   </div>
@@ -118,7 +118,7 @@ function Footer() {
                         <small className>Chat with us</small>
                       </div>
                       <div className="col-12 footer-rev-details">
-                        <a href="https://wa.me/c/919800144511" target="_blank">right here!</a>
+                        <a href="https://wa.me/c/919933332263" target=" _blank">right here!</a>
                       </div>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ function Footer() {
                         <small className>Write us at</small>
                       </div>
                       <div className="col-12 footer-rev-details">
-                        <a href="mailto:ranisati@gmail.com"><span className="__cf_email__" data-cfemail="f59c9b939ab5979980909894869a9b86db969a98">ranisati@gmail.com</span></a>
+                        <a href="mailto:ranisatiply@yahoo.com"><span className="__cf_email__" data-cfemail="f59c9b939ab5979980909894869a9b86db969a98">ranisatiply@yahoo.com</span></a>
                       </div>
                     </div>
                   </div>

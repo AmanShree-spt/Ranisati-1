@@ -89,14 +89,13 @@ function Navbar() {
               </a>
             </div>
             <ul>
+              <li><a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
+
               <li className="notlist">
                 <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} target="_blank" href={"/start-your-project"}>Get Started</a>
               </li>
-              <li><a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
               <li><a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/howitworks"}>How it works</a></li>
-              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/aboutus"}>About us</a>             </li>
 
-              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/products"}>Products</a>             </li>
               <li className="tootltypes">
                 <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/interior-design"}>Our Design</a>
                 <ul className="row loca">
@@ -135,6 +134,10 @@ function Navbar() {
                   <li className="col-1"></li>
                 </ul>
               </li>
+              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/products"}>Products</a>             </li>
+
+              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/aboutus"}>About us</a>             </li>
+
             </ul>
           </div>
         </div>
