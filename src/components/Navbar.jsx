@@ -139,9 +139,9 @@ function Navbar() {
                   <li className="col-1"></li>
                 </ul>
               </li>
-              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/products"}>Products</a>             </li>
+              <li> <a style={{ color: '#010100', fontWeight: '500', marginTop: '-5px' }} href={"/products"}>Products</a>             </li>
 
-              <li> <a style={{ color: '#616161', fontWeight: '500', marginTop: '-5px' }} href={"/aboutus"}>About us</a>             </li>
+              <li> <a style={{ color: '#010100', fontWeight: '500', marginTop: '-5px' }} href={"/aboutus"}>About us</a>             </li>
 
             </ul>
           </div>
