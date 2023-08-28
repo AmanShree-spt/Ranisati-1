@@ -1,12 +1,31 @@
+.top_details {
+    padding: 5px 10px;
+    /* background-color: rgba(255,255,255,0.9); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+.top_details div{
+    font-size: 20px;
+    width: 50%;
+    
+}
+
+.dial-mail a{
+    color: #000;
+}
+
 
 .custom_nav.scrooling{
     background-color: rgba(255,255,255,0.9);
     color: #000;
     -webkit-transition:  0.4s ease;
     transition: 0.4s ease;
-    -webkit-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3);
-    box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3);
+    /* -webkit-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3); */
+    /* -moz-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3); */
+    /* box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3); */
 }
 .notlist a{
     color: #fff ;
@@ -22,7 +41,7 @@
     display: block;
     padding: 0 20px;
     float: left;
-    height: 60px;
+    height: 100px;
     line-height:35px;
     cursor: pointer
 }
@@ -32,7 +51,7 @@
     transition: all 2s ease;
     transition-duration: .6s
 }
-.scrooling > #menu_items ul .tootltypes:hover:after {
+/* .scrooling > #menu_items ul .tootltypes:hover:after {
     position: absolute;
     bottom: 0;
     left: 70%;
@@ -46,7 +65,7 @@
     border-bottom: 15px solid;
     border-left: 15px solid transparent;
     opacity: .95
-}
+} */
 .scrooling > #menu_items ul ul{
     background-color: #fff;
     display: none;
@@ -70,4 +89,13 @@
     transform: scale(0.8);
     
 }
-    
+.logoimg {
+    display: flex;
+    flex-direction: row;
+}
+.comname {
+    margin: 0;
+    display: inline;
+}
+
+
