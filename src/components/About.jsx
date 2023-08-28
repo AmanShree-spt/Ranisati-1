@@ -8,6 +8,7 @@ function About() {
       <Navbar />
       <div className="heading">
         <img src="/img/Services.jpg" />
+        <br /><br />
         <h2>About Us</h2>
       </div>
 
