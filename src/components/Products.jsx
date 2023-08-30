@@ -6,7 +6,7 @@ function Products() {
   return (
     <>
       <Navbar />
-      <div className="heading" style={{ marginTop: '6rem' }}>
+      <div className="heading" style={{ marginTop: '190px', marginBottom: '1rem' }}>
         <h2>Our Products</h2>
       </div>
 

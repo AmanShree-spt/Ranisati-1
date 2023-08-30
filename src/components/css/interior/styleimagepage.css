@@ -148,7 +148,7 @@ padding-left: 50px;
     box-shadow: 0 2px 5px -1px rgba(0,0,0,0.3);
 }
 
-#menu_items ul .tootltypes:hover:after {
+/* #menu_items ul .tootltypes:hover:after {
   position: absolute;
   bottom: 0;
   left: 65%;
@@ -162,7 +162,7 @@ padding-left: 50px;
   border-bottom: 15px solid;
   border-left: 15px solid transparent;
   
-}
+} */
 #menu_items ul ul li a p{
     color: #434343;
     margin-top:1px;
