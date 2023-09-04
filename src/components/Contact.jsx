@@ -15,15 +15,8 @@ function Contact() {
       <div className="row">
         <div className="col-12" id="head--contact">
           <h1 className="heading--contact" style={{ color: 'black' }}>
-            Let's make something great together!
           </h1>
-          <p className="img-link mx-auto text-center" style={{}} >
-            <img src={'https://www.vhv.rs/dpng/d/86-863846_pink-love-heart-emoji-hd-png-download.png'} height='40' />
-          </p>
           <p className="text-center" id="get-started">
-            <a href="start-your-project" target="_blank" className="start--project">
-              GET STARTED
-            </a>
           </p>
         </div>
       </div>

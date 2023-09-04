@@ -16,7 +16,7 @@ a,a:hover{
 #head--contact{
     height:90vh;
     background-size: 100% 100%;
-    background-image: url('./banner1.jpg');
+    background-image: url('./banner1.JPG');
     background-attachment: fixed;
 }
 #head--contact::after{
@@ -24,9 +24,6 @@ a,a:hover{
     position: absolute;
     background-color: #fff;
     z-index: 99;
-    width: 55%;
-    left: -525px;
-    transform: skew(-99deg);
     height: 146px;
     bottom: 0px;
 }
@@ -35,11 +32,8 @@ a,a:hover{
     position: absolute;
     background-color: #fff;
     z-index: 99;
-    width: 50%;
-    transform: skew(-81deg) rotate(0deg);
     height: 180px;
     bottom: 0px;
-    right: -557px;
 }
 .heading--contact{
     color: #fff;
@@ -181,7 +175,7 @@ a,a:hover{
     /*********** Head Section *********/    
     #head--contact{
       height:70vh;
-      background-image: url(./mobilehead.jpg);
+      background-image: url(./banner1.JPG);
     }
     .heading--contact{
       font-size: 26px;

@@ -25,7 +25,7 @@ html{
     overflow: auto;
 }
 .scroll-container {
-        overflow-y: auto;
+        overflow-y: none;
   background-color: #333;
   white-space: nowrap;
 }
@@ -79,7 +79,7 @@ h1,h2,h3,p,span,a{
 }
 #sectionaccess{
   height: 100vh;
-  background-image: url('./backimage.jpg');
+  background-image: url('./banner1.JPG');
   background-size: 100% 100%;
 }
 .starttext{
@@ -120,7 +120,7 @@ h1,h2,h3,p,span,a{
     padding-left:0;
 }
 #mainframe{
-    background-image: url('./backimage.jpg');
+    background-image: url('./banner1.JPG');
     background-size: 100% 100%;
     background-attachment: fixed;
     color: white;

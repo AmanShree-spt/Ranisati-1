@@ -2,7 +2,20 @@ import React, { useRef, useState, useEffect } from 'react';
 import Footer from './Footer.jsx';
 import Navbar from './Navbar.jsx';
 import './css/contact/StartProject.css';
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 function StartProject() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
 
   const myDivRef = useRef(null);
   const myDivRef2 = useRef(null);
@@ -83,12 +96,15 @@ function StartProject() {
                             <a style={{ color: '#616161' }} className="MyButtons"></a>
                           </div>
                           <div className="scroll-container">
-                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/home/restaurant13.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
-                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/home/restaurant5.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
-                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/hotel/restaurant3.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
-                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/office/restaurant3.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
-                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/others/restaurant7.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
-                            <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/office/restaurant13.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+
+                            <Slider {...sliderSettings}>
+                              <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/home/restaurant13.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                              <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/home/restaurant5.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                              <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/hotel/restaurant3.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                              <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/office/restaurant3.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                              <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/others/restaurant7.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                              <img name="Get Free Quote Image One" description="Get Free Quote Image One" src="/img/sample_photos/office/restaurant13.jpg" style={{ width: '50vw', objectFit: 'cover' }} />
+                            </Slider>
                           </div>
                           <div align="center" className="skipable notmobile">
                             <p className="text-center">I've seen enough</p>

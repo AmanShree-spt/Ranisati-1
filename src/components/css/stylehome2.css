@@ -20,7 +20,7 @@
 .horScroll {
     width: 100%;
     margin: 10px 0px;
-    padding: 0;
+    padding: 3rem;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -49,10 +49,12 @@
 }
 
 .horScroll img {
-    height: 15rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+    object-fit: fill;
+    border-radius: 10px;
     /* border-style: double; */
-    padding: 10px;
+    padding: 26px;
 }
 @media screen and (max-width:768px) {
     .servicesPr{

@@ -27,29 +27,29 @@ function Navbar() {
   return (
     <>
 
-      <nav style={{}} className={`navbar navbar-light sticky-top notbigs ${isScrolled ? 'scrooling' : ''}   `}>
+      <nav style={{ backgroundColor: 'grey' }} className={`navbar navbar-light sticky-top notbigs scrooling ${isScrolled ? 'scrooling' : ''}   `}>
         <div>
-        <div className="top_details">
-              <div style={{ left: '0', fontWeight: 'bold', fontSize: '10px', textAlign: 'justify'}}><img src="/img/map-locator-top.png" alt="" height='15px'/> 45/46, G. T. Road- East, Beside Icici Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
-              <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black', fontSize: '12px'}}><a href="tel:+919933332263"><img src="/img/phone-call-top.png" alt="" height='15px' /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" height='15px'/> ranisatiply@yahoo.com</a></div>
-            </div>
-        <button onClick={handleNavCollaped} className="navbar-toggler btn-expand-collapse navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span> <i><img className="SimpleLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>
-          <span> <i><img className="ScrollLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>
-        </button>
-        <a className="navbar-brand" href="/" style={{ marginLeft: '28px' }}>
-          {!isScrolled ?
-            <img href={'/'} className="SimpleLogo biglogo" src={"/img/Ranisati_logo_new.png"} style={{ display: 'block' }} height="40px" alt="Ranisati" /> :
-            <img href={'/'} className="ScrollLogo smallimg" src={"/img/Ranisati_logo_new.png"} style={{ display: 'block' }} height="40px" alt="Ranisati" />}
-        </a>
+          <div className="top_details">
+            <div style={{ left: '0', fontWeight: 'bold', fontSize: '10px', textAlign: 'justify' }}><img src="/img/map-locator-top.png" alt="" height='15px' /> 45/46, G. T. Road- East, Beside Icici Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
+            <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black', fontSize: '12px' }}><a href="tel:+919933332263"><img src="/img/phone-call-top.png" alt="" height='15px' /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" height='15px' /> ranisatiply@yahoo.com</a></div>
+          </div>
+          <button onClick={handleNavCollaped} className="navbar-toggler btn-expand-collapse navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span> <i><img className="SimpleLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>
+            <span> <i><img className="ScrollLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>
+          </button>
+          <a className="navbar-brand" href="/" style={{ marginLeft: '28px' }}>
+            {!isScrolled ?
+              <img href={'/'} className="SimpleLogo biglogo" src={"/img/Ranisati_logo_new.png"} style={{ display: 'block' }} height="40px" alt="Ranisati" /> :
+              <img href={'/'} className="ScrollLogo smallimg" src={"/img/Ranisati_logo_new.png"} style={{ display: 'block' }} height="40px" alt="Ranisati" />}
+          </a>
 
-        <a className="pull-right opencontact" href="start-your-project">
-          <span className="nav-label spl-blcak"> Get Started</span>
-        </a>
+          <a className="pull-right opencontact" href="start-your-project">
+            <span className="nav-label spl-blcak"> Get Started</span>
+          </a>
         </div>
 
       </nav>
-      <nav className={`navbar-primary notbigs ${isCollapsed ? 'collapsed' : ''}`} style={{ zIndex: '120' }} >
+      <nav style={{ backgroundColor: 'grey' }} className={`navbar-primary notbigs ${isCollapsed ? 'collapsed' : ''}`} style={{ zIndex: '120' }} >
         <ul className="navbar-primary-menu">
           <li>
             <a href="/aboutus"><span className="nav-label">About us</span></a>
@@ -93,10 +93,10 @@ function Navbar() {
 
 
 
-      <nav className=" sticky-top" style={{ position: 'fixed', width: '100%' }} >
+      <nav style={{ backgroundColor: 'grey' }} className=" sticky-top" style={{ position: 'fixed', width: '100%' }} >
 
 
-        <div className={` custom_nav ${isScrolled ? 'scrooling' : ''} `}>
+        <div className={` custom_nav scrooling ${isScrolled ? 'scrooling' : ''} `}>
 
           <div id="menu_items">
             {/* <div><p>Hello</p></div> */}
@@ -112,7 +112,7 @@ function Navbar() {
                     <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_new.png"} alt="Ranisati" height="85px" style={{ marginTop: '-5px', paddingLeft: '20px', display: 'block' }} />}
                 </a>
               </div>
-              <div style={{paddingTop: '10px'}}><a href={"/"} style={{color: '#000'}}><strong style={{ fontSize: '30px', color: 'red'}}>Ranisati</strong><br /> <strong>Ply & Hardware</strong></a></div>
+              <div style={{ paddingTop: '10px' }}><a href={"/"} style={{ color: '#000' }}><strong style={{ fontSize: '30px', color: 'red' }}>Ranisati</strong><br /> <strong>Ply & Hardware</strong></a></div>
             </div>
             <ul>
               <li><a style={{ color: '#010100', fontWeight: '500', marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
