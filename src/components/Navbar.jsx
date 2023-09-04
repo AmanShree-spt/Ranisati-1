@@ -44,7 +44,7 @@ function Navbar() {
           </a>
 
           <a className="pull-right opencontact" href="start-your-project">
-            <span className="nav-label spl-blcak"> Get Started</span>
+            <span style={{ color: 'black' }} className="nav-label spl-blcak"> Get Started</span>
           </a>
         </div>
 

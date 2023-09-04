@@ -101,7 +101,7 @@ function Home() {
 
       <div className="cover" >
 
-        <div className="horScroll" ref={containerRef}>
+        <div className="horScroll2" ref={containerRef}>
           {Object.keys(images).map((key) => (
             <img src={images[key]} />
           ))}
