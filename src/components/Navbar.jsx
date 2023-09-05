@@ -24,14 +24,18 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+
+
   return (
     <>
 
-      <nav style={{ backgroundColor: 'grey' }} className={`navbar navbar-light sticky-top notbigs scrooling ${isScrolled ? 'scrooling' : ''}   `}>
+      <nav style={{ backgroundColor: 'grey', position: 'fixed', top: '0' }} className={`navbar navbar-light sticky-top notbigs scrooling ${isScrolled ? 'scrooling' : ''}   `}>
         <div>
           <div className="top_details">
             <div style={{ left: '0', fontWeight: 'bold', fontSize: '10px', textAlign: 'justify' }}><img src="/img/map-locator-top.png" alt="" height='15px' /> 45/46, G. T. Road- East, Beside ICICI Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
-            <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black', fontSize: '12px' }}><a href="tel:+919933332263"><img src="/img/phone-call-top.png" alt="" height='15px' /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" height='15px' /> ranisatiply@yahoo.com</a></div>
+            <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black', fontSize: '12px' }}><a href="https://wa.me/919933332263"><img src="/img/phone-call-top.png" alt="" height='15px' /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" height='15px' /> ranisatiply@yahoo.com</a></div>
           </div>
           <button onClick={handleNavCollaped} className="navbar-toggler btn-expand-collapse navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span> <i><img className="SimpleLogo" src={"/img/menuBlack.png"} alt="ranisati" /> </i></span>

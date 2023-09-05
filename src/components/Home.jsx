@@ -80,6 +80,16 @@ function Home() {
   };
 
 
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    // Check if the viewport width is below a certain threshold (e.g., 768px for mobile)
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
+  const mobileMarginStyle = isMobile ? { marginTop: '130px' } : {};
+
+
   return (
     <>
       <Navbar />
@@ -87,8 +97,8 @@ function Home() {
 
 
 
-      <div id='sectiontop'     >
-        <div style={{ position: 'relative' }}>
+      <div id='sectiontop' style={mobileMarginStyle}    >
+        <div >
           <Slider {...sliderSettings}>
             {Object.keys(images_banner).map((key) => (
               <img style={{ objectFit: 'cover' }} src={images_banner[key]} />
