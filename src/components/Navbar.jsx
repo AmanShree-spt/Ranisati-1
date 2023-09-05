@@ -31,7 +31,7 @@ function Navbar() {
   return (
     <>
 
-      <nav style={{ backgroundColor: 'grey', position: 'fixed', top: '0' }} className={`navbar navbar-light sticky-top notbigs scrooling ${isScrolled ? 'scrooling' : ''}   `}>
+      <nav style={{ height: '8rem', backgroundColor: 'grey', position: 'fixed', top: '0' }} className={`navbar navbar-light sticky-top notbigs scrooling ${isScrolled ? 'scrooling' : ''}   `}>
         <div>
           <div className="top_details">
             <div style={{ left: '0', fontWeight: 'bold', fontSize: '10px', textAlign: 'justify' }}><img src="/img/map-locator-top.png" alt="" height='15px' /> 45/46, G. T. Road- East, Beside ICICI Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
