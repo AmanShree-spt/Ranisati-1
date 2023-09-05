@@ -79,11 +79,8 @@ function Footer() {
                   </div>
                   <div className="col-6">
                     <b>OUR DESIGNS</b> <br /><br />
-                    <a href="/interior-design/">Home Design</a> <br />
-                    <a href="/interior-design/office">Office Design</a> <br />
-                    <a href="/interior-design/hotel">Hotel Design</a> <br />
-                    <a href="/interior-design/restaurant">Restaurant Design</a> <br />
-                    <a href="/interior-design/others">Other Services</a> <br />
+                    <a href="/products/">Products</a> <br />
+                    <a href="/interior-design/">Our Designs</a> <br />
                   </div>
                 </div>
               </div>

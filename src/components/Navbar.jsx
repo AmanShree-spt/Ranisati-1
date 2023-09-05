@@ -30,7 +30,7 @@ function Navbar() {
       <nav style={{ backgroundColor: 'grey' }} className={`navbar navbar-light sticky-top notbigs scrooling ${isScrolled ? 'scrooling' : ''}   `}>
         <div>
           <div className="top_details">
-            <div style={{ left: '0', fontWeight: 'bold', fontSize: '10px', textAlign: 'justify' }}><img src="/img/map-locator-top.png" alt="" height='15px' /> 45/46, G. T. Road- East, Beside Icici Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
+            <div style={{ left: '0', fontWeight: 'bold', fontSize: '10px', textAlign: 'justify' }}><img src="/img/map-locator-top.png" alt="" height='15px' /> 45/46, G. T. Road- East, Beside ICICI Bank, Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
             <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black', fontSize: '12px' }}><a href="tel:+919933332263"><img src="/img/phone-call-top.png" alt="" height='15px' /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" height='15px' /> ranisatiply@yahoo.com</a></div>
           </div>
           <button onClick={handleNavCollaped} className="navbar-toggler btn-expand-collapse navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ function Navbar() {
         </div>
 
       </nav>
-      <nav style={{ backgroundColor: 'grey' }} className={`navbar-primary notbigs ${isCollapsed ? 'collapsed' : ''}`} style={{ zIndex: '120' }} >
+      <nav className={`navbar-primary notbigs ${isCollapsed ? 'collapsed' : ''}`} style={{ zIndex: '120' }} >
         <ul className="navbar-primary-menu">
           <li>
             <a href="/aboutus"><span className="nav-label">About us</span></a>
@@ -93,7 +93,7 @@ function Navbar() {
 
 
 
-      <nav style={{ backgroundColor: 'grey' }} className=" sticky-top" style={{ position: 'fixed', width: '100%' }} >
+      <nav className=" sticky-top" style={{ position: 'fixed', width: '100%' }} >
 
 
         <div className={` custom_nav scrooling ${isScrolled ? 'scrooling' : ''} `}>
@@ -101,7 +101,7 @@ function Navbar() {
           <div id="menu_items">
             {/* <div><p>Hello</p></div> */}
             <div className="top_details">
-              <div style={{ left: '0', fontWeight: 'bold' }}><img src="/img/map-locator-top.png" alt="" /> 45/46, G. T. Road- East, Beside Icici Bank, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
+              <div style={{ left: '0', fontWeight: 'bold' }}><img src="/img/map-locator-top.png" alt="" /> 45/46, G. T. Road- East, Beside ICICI Bank, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
               <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black' }}><a href="tel:+919933332263"><img src="/img/phone-call-top.png" alt="" /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" /> ranisatiply@yahoo.com</a></div>
             </div>
 

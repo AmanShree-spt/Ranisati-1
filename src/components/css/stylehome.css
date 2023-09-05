@@ -298,12 +298,6 @@ span {
     outline: 0
 }
 
-#sectiontop {
-    background-image: url(../../../public/img/banner3.jpg);
-    height: 100vh;
-    width: auto;
-    background-size: 100% 100%
-}
 
 .custom_nav {
     padding-top: 15px
@@ -470,19 +464,6 @@ span {
     color: #fff
 }
 
-#sectiontop h3 {
-    font-weight: 200;
-    font-size: 40px;
-    padding-top: 210px!important;
-
-    color: #fff
-}
-#sectiontop h1{
-    padding-bottom: 185px !important;
-}
-#sectiontop h3>.space {
-    line-height: 80px
-}
 
 .quote {
     background-color: transparent;
@@ -1059,31 +1040,7 @@ span {
     body {
         overflow-x: hidden
     }
-    #sectiontop {
-        background-image: url(../../../public/img/banner3.jpg);
-        height: 100vh;
-        width: auto;
-        background-size:cover;
-        background-position: 30%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 150%;
-    }
-    #sectiontop h3 {
-        font-weight: 200;
-        font-size: 35px;
-        padding-top: 180px;
-        color: #fff;
-
-    }
-    #sectiontop h3>.space {
-        line-height: 80px
-    }
-    #sectiontop h1{
-        font-size: 25px;
-        padding-bottom: 80px !important;
-    }
-
-    
+      
 
     .quote {
         border: 2px solid #eeeae5;
@@ -1436,23 +1393,7 @@ span {
     .tag_buttons a {
         background-color: transparent
     }
-    #sectiontop {
-        background-image: url(../../../public/img/banner3.jpg);
-        height: 100vh;
-        width: auto;
-        background-size: 100% 100%
-    }
-    #sectiontop h3 {
-        font-weight: 200;
-        font-size: 32px;
-        padding-top: 130px;
-        color: #fff;
-        padding-bottom: 80px
-    }
-    #sectiontop h3>.space {
-        line-height: 80px
-    }
-    .quote {
+      .quote {
         border: 2px solid #eeeae5;
         color: #fff;
         font-size: 18px;
@@ -1792,24 +1733,7 @@ span {
     .tag_buttons a {
         background-color: transparent
     }
-       #sectiontop {
-        position: absolute;
-        background-image: url(../../../public/img/banner3.jpg);
-        height: 100vh;
-        width: auto;
-        background-size:cover; 
-    }
-    #sectiontop h3 {
-        font-weight: 200;
-        font-size: 32px;
-        padding-top: 180px;
-        color: #fff;
-        padding-bottom: 140px
-    }
-    #sectiontop h3>.space {
-        line-height: 80px
-    }
-    .quote {
+         .quote {
         border: 2px solid #eeeae5;
         color: #fff;
         font-size: 18px;
@@ -2155,10 +2079,7 @@ span {
         background-color: transparent
     }
 
-    #sectiontop h3>.space {
-        line-height: 80px
-    }
-
+  
     #sectionwork {
         padding-top: 30px;
         padding-bottom: 10px

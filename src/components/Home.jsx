@@ -2,6 +2,11 @@ import React from 'react';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import './css/stylehome.css';
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 import { useRef, useState, useEffect } from 'react';
 import './css/stylehome2.css';
@@ -41,9 +46,10 @@ function Home() {
     return images;
   };
 
-  const [currentImageKey, setCurrentImageKey] = useState('./restaurant1.jpg');
+  const [currentImageKey, setCurrentImageKey] = useState('./front1.jpg');
 
 
+  const images_banner = importAll(require.context("../../public/img/frontpage", false, /\.(png|jpe?g|svg)$/));
   const images = importAll(require.context("../../public/img/sample_photos/others", false, /\.(png|jpe?g|svg)$/));
   console.log(images)
   const images_brand = importAll(require.context("../../public/img/brands", false, /\.(png|jpe?g|svg)$/));
@@ -51,7 +57,7 @@ function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const imageKeys = Object.keys(images);
+      const imageKeys = Object.keys(images_banner);
       const currentIndex = imageKeys.indexOf(currentImageKey);
       const nextIndex = (currentIndex + 1) % imageKeys.length;
       setCurrentImageKey(imageKeys[nextIndex]);
@@ -62,40 +68,45 @@ function Home() {
     };
   }, [currentImageKey]);
 
-
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode: true,
+    centerPadding: '0',
+  };
 
 
   return (
     <>
       <Navbar />
-      <div id='sectiontop' style={{
-        backgroundImage: `url(${images[currentImageKey]})`,
-        backgroundSize: 'cover',
-        transition: 'background-image 3s ease-in-out',
-      }}>
+
+
+
+
+      <div id='sectiontop'     >
+        <div style={{ position: 'relative' }}>
+          <Slider {...sliderSettings}>
+            {Object.keys(images_banner).map((key) => (
+              <img style={{ objectFit: 'cover' }} src={images_banner[key]} />
+            ))}
+          </Slider>
+        </div>
         <div className="text-center newly">
           <h3 className style={{ paddingBottom: '10px !important', fontWeight: '300' }}>
             <div className="typed_wrap">
               <span className="typed"></span>
             </div>
           </h3>
-          <h1 className="text-center maintexts headon">
-            <span style={{ color: 'red' }}>Ranisati</span> Ply & Hardware
-          </h1>
-
-        </div>
-        <div className="text-center">
-          <a className="quote" target="_blank" href="/start-your-project">
-            Get Free Quote
-          </a>
+          {//<h1 className="text-center maintexts headon">
+            //      <span style={{ color: 'red' }}>Ranisati</span> Ply & Hardware
+            //  </h1>
+          }
         </div>
 
-        <a className="text-center downArrow">
-          <div className="arrow arrow-first"></div>
-          <div className="arrow arrow-second"></div>
-          <div className="arrow arrow-third"></div>
-        </a>
-        <div className="linklink"></div>
       </div>
 
 
@@ -103,7 +114,7 @@ function Home() {
 
         <div className="horScroll2" ref={containerRef}>
           {Object.keys(images).map((key) => (
-            <img src={images[key]} />
+            <img style={{ borderRadius: '4rem', objectFit: 'fill', width: '25rem' }} src={images[key]} />
           ))}
         </div>
 
@@ -1318,7 +1329,7 @@ function Home() {
         </div>
         <div className="horScroll" ref={brandRef}>
           {Object.keys(images_brand).map((key) => (
-            <img src={images_brand[key]} />
+            <img style={{ borderRadius: '3rem' }} src={images_brand[key]} />
           ))}
         </div>
 

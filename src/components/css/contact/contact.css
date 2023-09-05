@@ -13,12 +13,6 @@ a,a:hover{
      text-decoration: none;
      outline: none;
 }
-#head--contact{
-    height:90vh;
-    background-size: 100% 100%;
-    background-image: url('./banner1.JPG');
-    background-attachment: fixed;
-}
 #head--contact::after{
     content: '';
     position: absolute;

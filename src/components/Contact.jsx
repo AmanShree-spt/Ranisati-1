@@ -6,16 +6,32 @@ import './css/contact/contact.css';
 import './css/contact/formstyle.css';
 import './css/contact/hover-min.css';
 //import './css/contact/contactstyle.css';
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 
 function Contact() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
+
   return (
     <>
       <Navbar />
+      <Slider {...sliderSettings}>
+        <img src={'/img/contact_1.JPG'} />
+        <img src={'/img/contact_2.JPG'} />
+      </Slider>
       <div className="row">
         <div className="col-12" id="head--contact">
-          <h1 className="heading--contact" style={{ color: 'black' }}>
-          </h1>
           <p className="text-center" id="get-started">
           </p>
         </div>
@@ -38,7 +54,7 @@ function Contact() {
                 {/* <p><span className="__cf_email__"
                   data-cfemail="b9f0f7fff6f9fbf5ecfcf4f8eaf6f7ea97faf6f4"></span>
                 </p> */}
-                <p>ranisati@gmail.com
+                <p>ranisatiply@yahoo.com
                 </p>
               </a>
             </div>
