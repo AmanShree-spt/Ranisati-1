@@ -27,21 +27,21 @@ function Footer() {
 
         <div id="footersocial">
           <div className>
-            <div className="row ">
+            <div className="row " style={{justifyContent: 'center'}}>
               <div className="col-md-1 col-sm-0 col-0"></div>
               <div className="col-md-1 col-sm-0 col-0"></div>
               <div className="col-md-1 col-sm-0 col-1"></div>
               <div className="col-md-1 col-1">
-                <a href={""}>
+                <a href={"https://www.facebook.com/rspasansol?mibextid=LQQJ4d"} target='_blank'>
                   <i className="fa fa-facebook sofirst" aria-hidden="true"></i>
                 </a>
               </div>
               <div className="col-md-1 col-1">
-                <a href={""}>
+                <a href={"https://www.instagram.com/ranisatiply.asn/?igshid=MzRlODBiNWFlZA%3D%3D"} target='_blank'>
                   <i className="fa fa-instagram sosec" aria-hidden="true"></i>
                 </a>
               </div>
-              <div className="col-md-1 col-1">
+              {/* <div className="col-md-1 col-1">
                 <a href={""}>
                   <i className="fa fa-twitter sothree" aria-hidden="true"></i>
                 </a>
@@ -60,7 +60,7 @@ function Footer() {
                 <a href={""}>
                   <i className="fa fa-linkedin soeight" aria-hidden="true"></i>
                 </a>
-              </div>
+              </div> */}
               <div className="col-md-1 col-sm-0  col-1"></div>
               <div className="col-md-1 col-sm-0  col-0"></div>
               <div className="col-md-1 col-sm-0 col-0"></div>
@@ -98,7 +98,8 @@ function Footer() {
                         <small className>Call us anytime</small>
                       </div>
                       <div className="col-12 footer-rev-details">
-                        <a href="tel:+919933332263">+91-9933332263</a>
+                        <a href="tel:+919933332263">+91-9933332263</a><br/>
+                        <a href="tel:+919800144511">+91-9800144511</a>
                       </div>
                     </div>
                   </div>
