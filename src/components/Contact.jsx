@@ -28,7 +28,7 @@ function Contact() {
       <Navbar />
       <Slider {...sliderSettings}>
         <img src={'/img/contact_1.JPG'} />
-        <img src={'/img/contact_3.JPG'} />
+        <img src={'/img/contact_3.jpg'} />
       </Slider>
       
 

@@ -134,8 +134,15 @@ function Home() {
 
 
       <div className="chat-popup" id="myForm">
-        <a href="tel:+919933332263"><img src="../../img/phone-call.png" style={{ height: '4rem', width: '4rem' }} /></a>
+        <a href="tel:+919933332263"><img src="../../img/phone-call.png" style={{ height: '3.7rem', width: '3.7rem' }} /></a>
       </div>
+      <div className="insta-popup">
+        <a href={"https://www.instagram.com/ranisatiply.asn/?igshid=MzRlODBiNWFlZA%3D%3D"} target='_blank'><img src="../../img/instagram.png" style={{ height: '3.7rem', width: '3.7rem' }} /></a>
+      </div>
+      <div className="facebook-popup">
+        <a href={"https://www.facebook.com/rspasansol?mibextid=LQQJ4d"} target='_blank'><img src="../../img/facebook.png" style={{ height: '3.7rem', width: '3.7rem' }} /></a>
+      </div>
+
 
       <div id="sectionresi" className="first-spacing-home">
         <a target="_blank" href="/interior-design/" className="text-left" style={{ backgroundColor: '' }}>
