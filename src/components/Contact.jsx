@@ -28,14 +28,9 @@ function Contact() {
       <Navbar />
       <Slider {...sliderSettings}>
         <img src={'/img/contact_1.JPG'} />
-        <img src={'/img/contact_2.JPG'} />
+        <img src={'/img/contact_3.JPG'} />
       </Slider>
-      <div className="row">
-        <div className="col-12" id="head--contact">
-          <p className="text-center" id="get-started">
-          </p>
-        </div>
-      </div>
+      
 
       <div className="row">
         <div className="col-12" id="form--were">
@@ -48,7 +43,7 @@ function Contact() {
               <p>+91-9932442966</p>
             </div>
             <div className="col-lg-4 col-md-4 col-12 text-center boxes">
-              <a className="down" href="mailto:ranisati@gmail.com">
+              <a className="down" href="mailto:ranisatiply@yahoo.com">
                 <img className="hvr-float" src="/img/email-icon.png" />
                 <p>WRITE TO US</p>
                 {/* <p><span className="__cf_email__"
@@ -59,7 +54,7 @@ function Contact() {
               </a>
             </div>
             <div className="col-lg-4 col-md-4 col-12 text-center boxes">
-              <a href="https://wa.me/c/919800144511" target="_blank">
+              <a href="https://wa.me/c/919933332263" target="_blank">
                 <img className="hvr-float" src="/img/chat-icon.png"
                   alt="Ranisati-chat" />
                 <p>LIVE CHAT</p>

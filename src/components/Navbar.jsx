@@ -106,7 +106,7 @@ function Navbar() {
             {/* <div><p>Hello</p></div> */}
             <div className="top_details">
               <div style={{ left: '0', fontWeight: 'bold' }}><img src="/img/map-locator-top.png" alt="" /> 45/46, G. T. Road- East, Beside ICICI Bank, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durga Mandir, Asansol, West Bengal, PIN - 713303</div>
-              <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black' }}><a href="tel:+919933332263"><img src="/img/phone-call-top.png" alt="" /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" /> ranisatiply@yahoo.com</a></div>
+              <div className="dial-mail" style={{ textAlign: 'right', textDecoration: 'none', color: 'black' }}><a href="https://wa.me/919933332263"><img src="/img/phone-call-top.png" alt="" /> +919933332263</a><br /><a href="mailto:ranisatiply@yahoo.com" ><img src="/img/email-top.png" alt="" /> ranisatiply@yahoo.com</a></div>
             </div>
 
             <div className="logoimg">
@@ -116,7 +116,7 @@ function Navbar() {
                     <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_new.png"} alt="Ranisati" height="85px" style={{ marginTop: '-5px', paddingLeft: '20px', display: 'block' }} />}
                 </a>
               </div>
-              <div style={{ paddingTop: '10px' }}><a href={"/"} style={{ color: '#000' }}><strong style={{ fontSize: '30px', color: 'red' }}>Ranisati</strong><br /> <strong>Ply & Hardware</strong></a></div>
+              <div style={{ paddingTop: '20px' }}><a href={"/"} style={{ color: '#000' }}><strong style={{ fontSize: '30px', color: 'red' }}>Ranisati</strong><strong style={{ fontSize: '30px'}}> Ply & Hardware</strong></a></div>
             </div>
             <ul>
               <li><a style={{ color: '#010100', fontWeight: '500', marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
