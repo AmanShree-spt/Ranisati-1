@@ -86,7 +86,23 @@
 .chat-popup {
   position: fixed;
   bottom: 0;
-  right: 30px;
+  right: 20px;
   bottom: 20px;
   z-index: 9;
+}
+
+.insta-popup {
+    position: fixed;
+    bottom: 0;
+    right: 90px;
+    bottom: 20px;
+    z-index: 9;
+}
+
+.facebook-popup {
+    position: fixed;
+    bottom: 0;
+    right: 160px;
+    bottom: 20px;
+    z-index: 9;
 }
