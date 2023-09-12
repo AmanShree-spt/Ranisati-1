@@ -30,13 +30,13 @@ function Contact() {
       <div id="showroom" >
         <div >
           <img src={'/img/contact_1.JPG'} style={{ height: '70vh', objectFit: 'cover' }} />
-          <p style={{ fontSize: '2rem' }}>45/46, G. T. Road- East, Beside ICICI Bank,
+          <p style={{ fontSize: '1.4rem', padding: '0.4rem' }}>45/46, G. T. Road- East, Beside ICICI Bank,
             Durga Mandir, Asansol, West Bengal, PIN - 713303</p>
         </div>
         <div >
           <img src={'/img/contact_3.jpg'} style={{ height: '70vh', objectFit: 'cover' }} />
 
-          <p style={{ fontSize: '2rem' }}>316, Block B, 2nd floor sentrum mall, shristinagar. Asansol -713305
+          <p style={{ fontSize: '1.4rem', padding: '0.4rem' }}>316, Block B, 2nd floor sentrum mall, shristinagar. Asansol -713305
             Ph no 9800144511
             Gst no 19AALFR4065K1ZN</p>
         </div>
