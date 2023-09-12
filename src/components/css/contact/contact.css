@@ -21,6 +21,23 @@ a,a:hover{
     height: 146px;
     bottom: 0px;
 }
+
+#showroom {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:768px) {
+    #showroom {
+        flex-wrap: wrap;
+        display: block;
+
+    }
+    #showroom > div > img {
+        width: 100vw;
+    }
+}
+
 #head--contact::before{
     content: '';
     position: absolute;

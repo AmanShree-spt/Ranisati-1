@@ -660,6 +660,8 @@ html {
     }
 }
 
+
+
 @media only screen and (min-width:510px) and (max-width:768px) {
     .chatting:hover,
     .dropdown-item:focus,

@@ -26,12 +26,21 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <div style={{height: '150px'}}></div>
-      <Slider {...sliderSettings}>
-        <img src={'/img/contact_1.JPG'} />
-        <img src={'/img/contact_3.jpg'} />
-      </Slider>
-      
+      <div style={{ height: '150px' }}></div>
+      <div id="showroom" >
+        <div >
+          <img src={'/img/contact_1.JPG'} style={{ height: '70vh', objectFit: 'cover' }} />
+          <p style={{ fontSize: '2rem' }}>45/46, G. T. Road- East, Beside ICICI Bank,
+            Durga Mandir, Asansol, West Bengal, PIN - 713303</p>
+        </div>
+        <div >
+          <img src={'/img/contact_3.jpg'} style={{ height: '70vh', objectFit: 'cover' }} />
+
+          <p style={{ fontSize: '2rem' }}>316, Block B, 2nd floor sentrum mall, shristinagar. Asansol -713305
+            Ph no 9800144511
+            Gst no 19AALFR4065K1ZN</p>
+        </div>
+      </div>
 
       <div className="row">
         <div className="col-12" id="form--were">
