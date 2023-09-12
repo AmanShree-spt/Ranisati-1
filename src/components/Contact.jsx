@@ -26,6 +26,7 @@ function Contact() {
   return (
     <>
       <Navbar />
+      <div style={{height: '150px'}}></div>
       <Slider {...sliderSettings}>
         <img src={'/img/contact_1.JPG'} />
         <img src={'/img/contact_3.jpg'} />
