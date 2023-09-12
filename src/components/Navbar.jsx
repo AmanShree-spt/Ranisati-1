@@ -116,7 +116,7 @@ function Navbar() {
                     <img className="ScrollLogo smallimg" src={"/img/Ranisati_logo_new.png"} alt="Ranisati" height="85px" style={{ marginTop: '-5px', paddingLeft: '20px', display: 'block' }} />}
                 </a>
               </div>
-              <div style={{ paddingTop: '20px' }}><a href={"/"} style={{ color: '#000' }}><strong style={{ fontSize: '30px', color: 'red' }}>Ranisati</strong><strong style={{ fontSize: '30px'}}> Ply & Hardware</strong></a></div>
+              <div style={{ paddingTop: '20px' }}><a href={"/"} style={{ color: '#000' }}><strong style={{ fontSize: '30px', color: 'red', letterSpacing: '2.5px' }}>Ranisati</strong><strong style={{ fontSize: '30px', letterSpacing: '2.5px'}}> Ply & Hardware</strong></a></div>
             </div>
             <ul>
               <li><a style={{ color: '#010100', fontWeight: '500', marginTop: '-5px' }} href={"/contact"}>Contact</a></li>
